@@ -13,7 +13,7 @@ class About extends Component {
           Get To Know Me
         </StyledHeader>
         <Grid columns={2} relaxed='very'>
-          <GridColumn width={6}>
+          <GridColumn width={8}>
             <StyledIntro>
               {strings.description.name}<br/><br/>
               {strings.description.story}
