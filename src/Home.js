@@ -1,10 +1,10 @@
 import React from 'react';
 import './Home.css';
-import About from "./sections/About/About";
+import StickySidebar from "./components/StickySidebar/StickySidebar";
 
 function Home() {
   return (
-    <About/>
+   <StickySidebar/>
   );
 }
 
