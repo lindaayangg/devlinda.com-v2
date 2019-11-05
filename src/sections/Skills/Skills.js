@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyledContainer, StyledHeader} from "../../res/styles";
+import {StyledContainer, StyledGridContainer, StyledHeader} from "../../res/styles";
 import {Grid, GridColumn, Icon, Label, Segment} from "semantic-ui-react";
 import {StyledLabelGroup, StyledSpan} from "./styles";
 import strings from "../../res/strings";
@@ -11,7 +11,7 @@ class Skills extends Component {
         <StyledHeader>
           What I know
         </StyledHeader>
-        <Grid>
+        <StyledGridContainer columns={3}>
           <GridColumn width={5}>
             <Segment raised>
               <Label as='a' color='pink' ribbon>
@@ -65,7 +65,7 @@ class Skills extends Component {
               </StyledLabelGroup>
             </Segment>
           </GridColumn>
-        </Grid>
+        </StyledGridContainer>
       </StyledContainer>
     )
   }
