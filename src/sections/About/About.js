@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {StyledContainer, StyledHeader, StyledIntro} from "./styles";
+import {StyledIntro} from "./styles";
 import strings from "../../res/strings";
 import {Grid, GridColumn} from "semantic-ui-react";
 import InfoCard from "../../components/InfoCard/InfoCard";
+import {StyledContainer, StyledHeader} from "../../res/styles";
 
 class About extends Component {
 

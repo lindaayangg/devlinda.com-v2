@@ -6,6 +6,11 @@ const strings = {
       "future, I would've said \"anything, but computers\". ",
     work: "I specialize in web development with React, but I am also passionate about backend development with Java and Python.",
     hobby: "When I am not sitting in front of my laptop, I enjoy photography, playing the piano, cello, working out and skating!"
+  },
+  skills: {
+    frontend: "Frontend",
+    backend: "Backend",
+    others: "Others",
   }
 };
 
