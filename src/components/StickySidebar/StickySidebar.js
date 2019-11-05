@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Menu} from "semantic-ui-react";
 import About from "../../sections/About/About";
 import {StyledArticle, StyledMenu} from "./styles";
+import Skills from "../../sections/Skills/Skills";
 
 class StickySidebar extends Component {
   render() {
@@ -14,10 +15,9 @@ class StickySidebar extends Component {
         </StyledMenu>
         <StyledArticle>
           <About/>
-          <About/>
+          <Skills/>
         </StyledArticle>
       </div>
-
     )
   }
 }

@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {StyledContainer, StyledHeader, StyledIntro} from "./styles";
+import {StyledIntro} from "./styles";
 import strings from "../../res/strings";
 import {Grid, GridColumn} from "semantic-ui-react";
 import InfoCard from "../../components/InfoCard/InfoCard";
+import {StyledContainer, StyledGridContainer, StyledHeader} from "../../res/styles";
 
 class About extends Component {
 
@@ -12,7 +13,7 @@ class About extends Component {
         <StyledHeader>
           Get To Know Me
         </StyledHeader>
-        <Grid columns={2} relaxed='very'>
+        <StyledGridContainer columns={2} relaxed='very'>
           <GridColumn width={8}>
             <StyledIntro>
               {strings.description.name}<br/><br/>
@@ -24,7 +25,7 @@ class About extends Component {
           <GridColumn width={7}>
             <InfoCard></InfoCard>
           </GridColumn>
-        </Grid>
+        </StyledGridContainer>
       </StyledContainer>
     )
   }
