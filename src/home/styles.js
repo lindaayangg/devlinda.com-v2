@@ -3,6 +3,7 @@ import {Menu} from "semantic-ui-react";
 
 export const StyledMenu = styled(Menu)`
   &&& {
+    overflow-y: auto;
     width: 280px !important;
     background-color: #DB1793 !important;
     border-right: none;
