@@ -35,6 +35,7 @@ export const StyledSocialMediaButtons = styled(Button)`
 export const StyledDivider = styled(Divider)`
   &&& {
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 `;
 
@@ -43,7 +44,6 @@ export const StyledNavList = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
   }
 `;
 
@@ -61,5 +61,41 @@ export const StyledHeaderContainer = styled(Header)`
 export const StyledHeaderLabel = styled(HeaderContent)`
   &&& {
     margin-left: 10px;
+  }
+`;
+
+export const StyledHireMeButton = styled(Button)`
+  &&& {
+    margin-top: 30px;
+    color: #fff;
+    background-color: #C71F7E;
+  }
+`;
+
+export const StyledDarkModeContainer = styled.div`
+  &&& {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+  }
+`;
+
+export const StyledDarkModeHeaderContainer = styled(Header)`
+  &&& {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+`;
+
+export const StyledDarkModeContent = styled(HeaderContent)`
+  &&& {
+    margin-left: 5px;
   }
 `;

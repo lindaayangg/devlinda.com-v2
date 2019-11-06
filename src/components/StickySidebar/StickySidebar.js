@@ -1,12 +1,18 @@
 import React, {Component} from 'react';
-import {Divider, Icon} from "semantic-ui-react";
+import {Icon, Radio} from "semantic-ui-react";
 import About from "../../sections/About/About";
 import {
-  StyledArticle, StyledDivider,
+  StyledArticle,
+  StyledDarkModeContainer,
+  StyledDarkModeContent,
+  StyledDarkModeHeaderContainer,
+  StyledDivider,
   StyledHeaderContainer,
   StyledHeaderLabel,
+  StyledHireMeButton,
   StyledMenu,
-  StyledMenuItem, StyledNavList,
+  StyledMenuItem,
+  StyledNavList,
   StyledSocialMediaButtons
 } from "./styles";
 import Skills from "../../sections/Skills/Skills";
@@ -20,7 +26,7 @@ class StickySidebar extends Component {
             LINDA YANG
           </StyledMenuItem>
           <StyledSocialMediaButtons circular icon='linkedin' size='large'/>
-          <StyledSocialMediaButtons circular icon='github' size='large'/>
+          <StyledSocialMediaButtons circular icon='github alternate' size='large'/>
           <StyledSocialMediaButtons circular icon='mail' size='large'/>
           <StyledSocialMediaButtons circular icon='google play' size='large'/>
           <StyledSocialMediaButtons circular icon='facebook' size='large'/>
@@ -53,6 +59,17 @@ class StickySidebar extends Component {
               </StyledHeaderContainer>
             </div>
           </StyledNavList>
+          <StyledHireMeButton>
+            <Icon name='send'/> Hire Me
+          </StyledHireMeButton>
+          <StyledDivider/>
+          <StyledDarkModeContainer>
+            <StyledDarkModeHeaderContainer as='h6'>
+              <Icon name='power off'/>
+              <StyledDarkModeContent>Dark Mode</StyledDarkModeContent>
+            </StyledDarkModeHeaderContainer>
+            <Radio toggle/>
+          </StyledDarkModeContainer>
         </StyledMenu>
         <StyledArticle>
           <About/>
