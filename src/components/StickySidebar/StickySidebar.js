@@ -8,6 +8,8 @@ import {
   StyledHeaderContainer,
   StyledHeaderLabel,
   StyledHireMeButton,
+  StyledImage,
+  StyledImageContainer,
   StyledMenuItem,
   StyledNavList,
   StyledSocialMediaButtons
@@ -20,6 +22,9 @@ class StickySidebar extends Component {
         <StyledMenuItem>
           LINDA YANG
         </StyledMenuItem>
+        <StyledImageContainer>
+          <StyledImage src='https://react.semantic-ui.com/images/wireframe/square-image.png' circular/>
+        </StyledImageContainer>
         <StyledSocialMediaButtons circular icon='linkedin' size='large'/>
         <StyledSocialMediaButtons circular icon='github alternate' size='large'/>
         <StyledSocialMediaButtons circular icon='mail' size='large'/>

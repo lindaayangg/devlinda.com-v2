@@ -1,11 +1,27 @@
 import styled from "styled-components";
-import {Button, Divider, Header, HeaderContent, Menu, MenuItem} from "semantic-ui-react";
+import {Button, Divider, Header, HeaderContent, Image, MenuItem} from "semantic-ui-react";
 
 export const StyledMenuItem = styled(MenuItem)`
   &&& {
     font-size:32px;
     font-weight: 900 !important;
     color: #fff !important; 
+  }
+`;
+
+export const StyledImageContainer = styled.div`
+  &&& {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+`;
+
+export const StyledImage = styled(Image)`
+  &&& {
+    width: 100px !important;
   }
 `;
 
@@ -19,8 +35,8 @@ export const StyledSocialMediaButtons = styled(Button)`
 
 export const StyledDivider = styled(Divider)`
   &&& {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 `;
 
