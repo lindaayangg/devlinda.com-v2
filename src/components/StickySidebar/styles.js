@@ -1,21 +1,6 @@
 import styled from "styled-components";
 import {Button, Divider, Header, HeaderContent, Menu, MenuItem} from "semantic-ui-react";
 
-export const StyledArticle = styled.div`
-  &&& {
-    margin-left: 300px;
-  }
-`;
-
-export const StyledMenu = styled(Menu)`
-  &&& {
-    width: 280px !important;
-    background-color: #DB1793 !important;
-    border-right: none;
-    text-align: center;
-  }
-`;
-
 export const StyledMenuItem = styled(MenuItem)`
   &&& {
     font-size:32px;
