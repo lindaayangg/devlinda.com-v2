@@ -9,6 +9,15 @@ export const StyledContainer = styled.div`
   }
 `;
 
+export const StyledHeaderWrapper = styled.div`
+  &&& {
+    width: fit-content;
+    border-bottom-style: solid;
+    border-bottom-color: #DB1793;
+    padding-bottom: 5px;
+  }
+`;
+
 export const StyledHeader = styled(Header)`
   &&& {
     font-size: 30px;
@@ -16,7 +25,7 @@ export const StyledHeader = styled(Header)`
   }
 `;
 
-export const StyledGridContainer = styled(Grid)`
+export const StyledGlobalGridContainer = styled(Grid)`
   &&& {
     margin-top: 10px;
   }

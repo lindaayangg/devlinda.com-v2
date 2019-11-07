@@ -1,7 +1,7 @@
 import React from 'react';
 import StickySidebar from "../components/StickySidebar/StickySidebar";
 import About from "../sections/About/About";
-import Skills from "../sections/Skills/Skills";
+import Knowledge from "../sections/Knowledge/Knowledge";
 import {StyledArticle, StyledMenu} from "./styles";
 
 function Home() {
@@ -12,7 +12,7 @@ function Home() {
       </StyledMenu>
       <StyledArticle>
         <About/>
-        <Skills/>
+        <Knowledge/>
       </StyledArticle>
     </div>
   );
