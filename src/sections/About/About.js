@@ -1,19 +1,21 @@
 import React, {Component} from 'react';
 import {StyledIntro} from "./styles";
 import strings from "../../res/strings";
-import {Grid, GridColumn} from "semantic-ui-react";
+import {GridColumn} from "semantic-ui-react";
 import InfoCard from "../../components/InfoCard/InfoCard";
-import {StyledContainer, StyledGridContainer, StyledHeader} from "../../res/styles";
+import {StyledContainer, StyledGlobalGridContainer, StyledHeader, StyledHeaderWrapper} from "../../res/styles";
 
 class About extends Component {
 
   renderDescription() {
     return (
       <StyledContainer>
-        <StyledHeader>
-          Get To Know Me
-        </StyledHeader>
-        <StyledGridContainer columns={2} relaxed='very'>
+        <StyledHeaderWrapper>
+          <StyledHeader>
+            Get To Know Me
+          </StyledHeader>
+        </StyledHeaderWrapper>
+        <StyledGlobalGridContainer columns={2} relaxed='very'>
           <GridColumn width={8}>
             <StyledIntro>
               {strings.description.name}<br/><br/>
@@ -25,7 +27,7 @@ class About extends Component {
           <GridColumn width={7}>
             <InfoCard></InfoCard>
           </GridColumn>
-        </StyledGridContainer>
+        </StyledGlobalGridContainer>
       </StyledContainer>
     )
   }
