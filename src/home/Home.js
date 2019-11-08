@@ -3,6 +3,7 @@ import StickySidebar from "../components/StickySidebar/StickySidebar";
 import About from "../sections/About/About";
 import Knowledge from "../sections/Knowledge/Knowledge";
 import {StyledArticle, StyledMenu} from "./styles";
+import Experience from "../sections/Experience/Experience";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <StyledArticle>
         <About/>
         <Knowledge/>
+        <Experience/>
       </StyledArticle>
     </div>
   );
