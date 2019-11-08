@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {GridColumn, Icon, Label, Segment} from "semantic-ui-react";
+import {GridColumn, GridRow, Icon, Label, Segment} from "semantic-ui-react";
 import {StyledGridContainer, StyledLabelGroup, StyledSpan} from "./styles";
 import strings from "../../res/strings";
 
@@ -7,7 +7,7 @@ class Skills extends Component {
   render() {
     return (
       <StyledGridContainer columns={3}>
-        <GridColumn width={5}>
+        <GridRow width={5}>
           <Segment raised>
             <Label as='a' color='pink' ribbon>
               <Icon name="code"/>
@@ -24,9 +24,9 @@ class Skills extends Component {
               <Label>Django Framework</Label>
             </StyledLabelGroup>
           </Segment>
-        </GridColumn>
+        </GridRow>
 
-        <GridColumn width={5}>
+        <GridRow width={5}>
           <Segment raised>
             <Label as='a' color='pink' ribbon>
               <Icon name="database"/>
@@ -42,9 +42,9 @@ class Skills extends Component {
               <Label>Spark Framework</Label>
             </StyledLabelGroup>
           </Segment>
-        </GridColumn>
+        </GridRow>
 
-        <GridColumn width={5}>
+        <GridRow width={5}>
           <Segment raised>
             <Label as='a' color='pink' ribbon>
               <Icon name="laptop"/>
@@ -59,7 +59,7 @@ class Skills extends Component {
               <Label>Photoshop/Illustrator</Label>
             </StyledLabelGroup>
           </Segment>
-        </GridColumn>
+        </GridRow>
       </StyledGridContainer>
     )
   }
