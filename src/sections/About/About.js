@@ -19,7 +19,7 @@ class About extends Component {
           <GridColumn width={8}>
             <StyledIntro>
               {strings.description.name}<br/><br/>
-              {strings.description.story}
+              {strings.description.story}<br/><br/>
               {strings.description.work}<br/><br/>
               {strings.description.hobby}
             </StyledIntro>

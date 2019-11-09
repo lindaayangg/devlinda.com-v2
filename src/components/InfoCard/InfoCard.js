@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {Card, Image} from "semantic-ui-react";
 import {StyledIcon} from "../../sections/About/styles";
-import {StyledCardDescription} from "./styles";
+import {StyledCardDescription, StyledCard, StyledEmail} from "./styles";
 
 class InfoCard extends Component {
   render() {
     return (
-      <Card>
+      <StyledCard>
         <Image src='https://devlinda.com/assets/img/profile.png' wrapped ui={false}/>
         <Card.Content>
           <Card.Header>Linda Yang</Card.Header>
@@ -15,7 +15,7 @@ class InfoCard extends Component {
           </Card.Meta>
           <StyledCardDescription>
             <StyledIcon name="mail" link/>
-            <a href='mailto:xiaoling.yang@uwaterloo.ca'>xiaoling.yang@uwaterloo.ca</a>
+            <StyledEmail href='mailto:xiaoling.yang@uwaterloo.ca'> xiaoling.yang@uwaterloo.ca</StyledEmail>
           </StyledCardDescription>
           <StyledCardDescription>
             <StyledIcon name="phone"/> 416-990-8432
@@ -24,7 +24,7 @@ class InfoCard extends Component {
             <StyledIcon name="map marker alternate"/> Toronto, ON • Waterloo, ON • Boston, MA • Winnipeg, MB
           </StyledCardDescription>
         </Card.Content>
-      </Card>
+      </StyledCard>
     )
   }
 }
