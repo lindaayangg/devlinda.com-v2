@@ -7,7 +7,7 @@ import {
   StyledCompanyWrapperRight,
   StyledImage,
   StyledLeftColumn,
-  StyledSegment,
+  StyledSegment, StyledTitleName,
   StyledToolsLabelGroup,
   StyledWorkExperienceWrapper
 } from "./styles";
@@ -29,20 +29,30 @@ class Work extends Component {
             <Grid.Column>
               <StyledCard>
                 <Card.Content>
-                  <Card.Header>Junior Software Developer</Card.Header>
+                  <StyledTitleName>Junior Software Developer | Internship</StyledTitleName>
                   <Card.Meta>Sep. 2019 - Present</Card.Meta>
                   <Card.Description>Placeholder for task</Card.Description>
                   <StyledToolsLabelGroup>
                     <Label>Java 8</Label>
                     <Label>ReactJS</Label>
+                    <Label>Redux</Label>
                     <Label>JavaScript</Label>
                     <Label>TypeScript</Label>
-                    <Label>Spark</Label>
+                    <Label>Spark Framework</Label>
                     <Label>MySQL</Label>
                     <Label>SQL</Label>
                     <Label>REST API</Label>
+                    <Label>Jooq</Label>
+                    <Label>Memcached</Label>
+                    <Label>ElasticSearch</Label>
+                    <Label>Graphite</Label>
+                    <Label>Quartz</Label>
+                    <Label>AutoValue</Label>
                     <Label>HTML | CSS</Label>
                     <Label>Git</Label>
+                    <Label>Jenkins</Label>
+                    <Label>Papertrail</Label>
+                    <Label>Jest & Enzyme</Label>
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
@@ -55,7 +65,7 @@ class Work extends Component {
             <StyledLeftColumn>
               <StyledCard>
                 <Card.Content>
-                  <Card.Header>Web Developer</Card.Header>
+                  <StyledTitleName>Web Developer | Internship</StyledTitleName>
                   <Card.Meta>Jan. 2019 - Apr. 2019</Card.Meta>
                   <Card.Description>
                     Involved in building the brand new static customer facing website www.formlabs.com with focus on
@@ -71,6 +81,7 @@ class Work extends Component {
                     <Label>REST API</Label>
                     <Label>JavaScript</Label>
                     <Label>JQuery</Label>
+                    <Label>GraphQL</Label>
                     <Label>HTML | CSS | SCSS</Label>
                     <Label>Git</Label>
                   </StyledToolsLabelGroup>
@@ -102,7 +113,7 @@ class Work extends Component {
             <Grid.Column>
               <StyledCard>
                 <Card.Content>
-                  <Card.Header>Web Developer, Ecommerce</Card.Header>
+                  <StyledTitleName>Ecommerce Web Developer | Internship</StyledTitleName>
                   <Card.Meta>Jun. 2018 - Aug. 2018</Card.Meta>
                   <Card.Description>
                     Responsible for developing a front-end web application on Magento Ecommerce platform.
@@ -126,7 +137,7 @@ class Work extends Component {
             <StyledLeftColumn>
               <StyledCard>
                 <Card.Content>
-                  <Card.Header>Pharmacy Technician</Card.Header>
+                  <StyledTitleName>Pharmacy Technician</StyledTitleName>
                   <Card.Meta>Oct. 2015 - Aug. 2017</Card.Meta>
                   <Card.Description>
                     Provided professional healthcare and customer service.

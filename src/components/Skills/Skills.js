@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {GridColumn, GridRow, Icon, Label, Segment} from "semantic-ui-react";
+import {GridRow, Icon, Label, Segment} from "semantic-ui-react";
 import {StyledGridContainer, StyledLabelGroup, StyledSpan} from "./styles";
 import strings from "../../res/strings";
 
@@ -21,7 +21,6 @@ class Skills extends Component {
               <Label>JavaScript</Label>
               <Label>TypeScript</Label>
               <Label>JQuery</Label>
-              <Label>Django Framework</Label>
             </StyledLabelGroup>
           </Segment>
         </GridRow>
@@ -40,6 +39,7 @@ class Skills extends Component {
               <Label>PostgresQL</Label>
               <Label>MySQL System</Label>
               <Label>Spark Framework</Label>
+              <Label>Django Framework</Label>
             </StyledLabelGroup>
           </Segment>
         </GridRow>

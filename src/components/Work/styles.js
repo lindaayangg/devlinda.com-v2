@@ -71,3 +71,9 @@ export const StyledCompanyName = styled.div`
     font-size: 18px !important;
   }
 `;
+
+export const StyledTitleName = styled(Card.Header)`
+  &&& {
+    color: #DB1793 !important;
+  }
+`;
