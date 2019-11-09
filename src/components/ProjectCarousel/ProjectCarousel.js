@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import {Card, Image, Label, LabelGroup} from "semantic-ui-react";
-import {StyledArrows, StyledCardWrapper} from "../../sections/Projects/styles";
+import {StyledArrows, StyledCardWrapper, StyledProjectName} from "../../sections/Projects/styles";
 
 
 class ProjectCarousel extends Component {
@@ -20,9 +20,9 @@ class ProjectCarousel extends Component {
           <Card>
             <Image src='https://devlinda.com/assets/img/projects/waveit.png' wrapped ui={false}/>
             <Card.Content>
-              <Card.Header>
+              <StyledProjectName>
                 Wave
-              </Card.Header>
+              </StyledProjectName>
               <Card.Meta>
                 <span>Sep. 2018</span>
               </Card.Meta>
@@ -50,7 +50,7 @@ class ProjectCarousel extends Component {
           <Card>
             <Image src='https://devlinda.com/assets/img/projects/budgetbuddy.png' wrapped ui={false}/>
             <Card.Content>
-              <Card.Header>BudgetBuddy</Card.Header>
+              <StyledProjectName>BudgetBuddy</StyledProjectName>
               <Card.Meta>
                 <span>Sep. 2018</span>
               </Card.Meta>
@@ -73,7 +73,7 @@ class ProjectCarousel extends Component {
           <Card>
             <Image src='https://devlinda.com/assets/img/projects/distractic1.png' wrapped ui={false}/>
             <Card.Content>
-              <Card.Header>Distractic</Card.Header>
+              <StyledProjectName>Distractic</StyledProjectName>
               <Card.Meta>
                 <span>May 2018</span>
               </Card.Meta>
@@ -95,7 +95,7 @@ class ProjectCarousel extends Component {
           <Card>
             <Image src='https://devlinda.com/assets/img/projects/safeme.png' wrapped ui={false}/>
             <Card.Content>
-              <Card.Header>SafeMe</Card.Header>
+              <StyledProjectName>SafeMe</StyledProjectName>
               <Card.Meta>
                 <span>May 2018</span>
               </Card.Meta>
@@ -118,7 +118,7 @@ class ProjectCarousel extends Component {
           <Card>
             <Image src='https://devlinda.com/assets/img/projects/groshare.png' wrapped ui={false}/>
             <Card.Content>
-              <Card.Header>GroShare</Card.Header>
+              <StyledProjectName>GroShare</StyledProjectName>
               <Card.Meta>
                 <span>Mar. 2018</span>
               </Card.Meta>

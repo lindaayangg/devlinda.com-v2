@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Icon} from "semantic-ui-react";
+import {CardHeader, Icon} from "semantic-ui-react";
 
 export const StyledProjectContainer = styled.div`
   &&& {
@@ -24,5 +24,11 @@ export const StyledArrows = styled(Icon)`
 export const StyledCardWrapper = styled.div`
   &&& {
     padding: 10px 0;
+  }
+`;
+
+export const StyledProjectName = styled(CardHeader)`
+  &&& {
+    color: #DB1793 !important;
   }
 `;

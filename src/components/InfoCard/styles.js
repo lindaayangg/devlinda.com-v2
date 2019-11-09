@@ -1,9 +1,22 @@
 import styled from "styled-components";
-import {CardDescription} from "semantic-ui-react";
+import {Card, CardDescription} from "semantic-ui-react";
 
 export const StyledCardDescription = styled(CardDescription)`
   &&& {
     line-height: 1.8rem;
-    font-size: 15px;
+    font-size: 14px;
   }
 `;
+
+export const StyledCard = styled(Card)`
+  &&& {
+    width: 225px !important;
+  }
+`;
+
+export const StyledEmail = styled.a`
+  &&& {
+    word-break: break-all;
+  }
+`;
+
