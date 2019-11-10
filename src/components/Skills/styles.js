@@ -1,15 +1,9 @@
 import styled from "styled-components";
-import {Grid, Icon, LabelGroup, Segment} from "semantic-ui-react";
+import {Grid, Icon, Segment} from "semantic-ui-react";
 
 export const StyledGridContainer = styled(Grid)`
   &&& {
-    margin-top: 30px !important;
-  }
-`;
-
-export const StyledLabelGroup = styled(LabelGroup)`
-  &&& {
-    margin-top: 20px;
+    margin-top: 20px !important;
   }
 `;
 
