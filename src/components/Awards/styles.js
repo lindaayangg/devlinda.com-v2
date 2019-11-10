@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {HeaderContent, Icon} from "semantic-ui-react";
+import {HeaderContent, Icon, ListItem} from "semantic-ui-react";
 
 export const StyledAchievementsWrapper = styled.div`
   &&& {
@@ -27,6 +27,11 @@ export const StyledAwards = styled(HeaderContent)`
     padding-left: 35px;
     font-size: 15px;
     margin-left: 25px;
-    line-height: 1.8rem;
+  }
+`;
+
+export const StyledSingleAward = styled(ListItem)`
+  &&& {
+    padding-bottom: 10px !important;
   }
 `;
