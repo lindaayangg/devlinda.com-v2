@@ -2,12 +2,6 @@ import styled from "styled-components";
 import {HeaderContent, Icon} from "semantic-ui-react";
 import HeaderSubHeader from "semantic-ui-react/dist/commonjs/elements/Header/HeaderSubheader";
 
-export const StyledEducationContainer = styled.div`
-  &&& {
-    margin-top: 40px;
-  }
-`;
-
 export const StyledUniversityIcon = styled(Icon)`
   &&& {
     color: #DB1793;

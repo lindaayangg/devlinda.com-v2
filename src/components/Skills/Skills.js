@@ -1,65 +1,162 @@
 import React, {Component} from 'react';
-import {GridRow, Icon, Label, Segment} from "semantic-ui-react";
-import {StyledGridContainer, StyledLabelGroup, StyledSpan} from "./styles";
+import {GridColumn, Icon, Label, List} from "semantic-ui-react";
+import {StyledCheckIcon, StyledGridContainer, StyledSegmentBox, StyledSkillsWrapper, StyledSpan} from "./styles";
 import strings from "../../res/strings";
 
 class Skills extends Component {
   render() {
     return (
-      <StyledGridContainer columns={3}>
-        <GridRow width={5}>
-          <Segment raised>
+      <StyledGridContainer relaxed='very'>
+        <GridColumn width={5}>
+          <StyledSegmentBox raised>
             <Label as='a' color='pink' ribbon>
               <Icon name="code"/>
             </Label>
             <StyledSpan>{strings.skills.frontend}</StyledSpan>
-            <StyledLabelGroup size='large'>
-              <Label>ReactJS</Label>
-              <Label>Redux</Label>
-              <Label>GraphQL</Label>
-              <Label>HTML | CSS </Label>
-              <Label>JavaScript</Label>
-              <Label>TypeScript</Label>
-              <Label>JQuery</Label>
-            </StyledLabelGroup>
-          </Segment>
-        </GridRow>
+            <StyledSkillsWrapper columns={2}>
+              <GridColumn>
+                <List>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>ReactJs</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>Redux</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>GraphQL</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>JavaScript</List.Content>
+                  </List.Item>
+                </List>
+              </GridColumn>
+              <GridColumn>
+                <List>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>JQuery</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>TypeScript</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>HTML | CSS</List.Content>
+                  </List.Item>
+                </List>
+              </GridColumn>
+            </StyledSkillsWrapper>
+          </StyledSegmentBox>
+        </GridColumn>
 
-        <GridRow width={5}>
-          <Segment raised>
+        <GridColumn width={5}>
+          <StyledSegmentBox raised>
             <Label as='a' color='pink' ribbon>
               <Icon name="database"/>
             </Label>
             <StyledSpan>{strings.skills.backend}</StyledSpan>
-            <StyledLabelGroup size='large'>
-              <Label>Java 8</Label>
-              <Label>C</Label>
-              <Label>Python</Label>
-              <Label>SQL</Label>
-              <Label>PostgresQL</Label>
-              <Label>MySQL System</Label>
-              <Label>Spark Framework</Label>
-              <Label>Django Framework</Label>
-            </StyledLabelGroup>
-          </Segment>
-        </GridRow>
+            <StyledSkillsWrapper columns={2}>
+              <GridColumn>
+                <List>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>Java 8</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>Python</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>C</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>SQL</List.Content>
+                  </List.Item>
+                </List>
+              </GridColumn>
+              <GridColumn>
+                <List>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>PostgresQL</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>MySQL</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>Spark</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>Django</List.Content>
+                  </List.Item>
+                </List>
+              </GridColumn>
+            </StyledSkillsWrapper>
+            {/*<StyledLabelGroup size='large'>*/}
+            {/*  <Label>Java 8</Label>*/}
+            {/*  <Label>C</Label>*/}
+            {/*  <Label>Python</Label>*/}
+            {/*  <Label>SQL</Label>*/}
+            {/*  <Label>PostgresQL</Label>*/}
+            {/*  <Label>MySQL System</Label>*/}
+            {/*  <Label>Spark Framework</Label>*/}
+            {/*  <Label>Django Framework</Label>*/}
+            {/*</StyledLabelGroup>*/}
+          </StyledSegmentBox>
+        </GridColumn>
 
-        <GridRow width={5}>
-          <Segment raised>
+        <GridColumn width={5}>
+          <StyledSegmentBox raised>
             <Label as='a' color='pink' ribbon>
               <Icon name="laptop"/>
             </Label>
             <StyledSpan>{strings.skills.others}</StyledSpan>
-            <StyledLabelGroup size='large'>
-              <Label>Git</Label>
-              <Label>Jenkins</Label>
-              <Label>Magento</Label>
-              <Label>DjangoCMS</Label>
-              <Label>Android Studio</Label>
-              <Label>Photoshop/Illustrator</Label>
-            </StyledLabelGroup>
-          </Segment>
-        </GridRow>
+            <StyledSkillsWrapper columns={2}>
+              <GridColumn>
+                <List>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>Git</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>Jenkins</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>Magento</List.Content>
+                  </List.Item>
+                </List>
+              </GridColumn>
+              <GridColumn>
+                <List>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>Android Studio</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>PhotoShop</List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <StyledCheckIcon name='check circle' size='large'/>
+                    <List.Content>DjangoCMS</List.Content>
+                  </List.Item>
+                </List>
+              </GridColumn>
+            </StyledSkillsWrapper>
+          </StyledSegmentBox>
+        </GridColumn>
       </StyledGridContainer>
     )
   }
