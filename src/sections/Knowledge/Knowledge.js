@@ -3,7 +3,7 @@ import {StyledContainer, StyledHeader, StyledHeaderWrapper} from "../../res/styl
 import Education from "../../components/Education/Education";
 import Skills from "../../components/Skills/Skills";
 import Awards from "../../components/Awards/Awards";
-import {GridColumn} from "semantic-ui-react";
+import {Grid, GridColumn, GridRow} from "semantic-ui-react";
 import {StyledWrapper} from "./styles";
 
 class Knowledge extends Component {
@@ -15,15 +15,21 @@ class Knowledge extends Component {
             What I know
           </StyledHeader>
         </StyledHeaderWrapper>
-        <StyledWrapper columns={2}>
-          <GridColumn width={7}>
-            <Education/>
+        <Grid columns={2}>
+          <GridColumn>
+            <StyledWrapper columns={2}>
+              <GridRow width={7}>
+                <Education/>
+              </GridRow>
+              <GridRow width={7}>
+                <Awards/>
+              </GridRow>
+            </StyledWrapper>
           </GridColumn>
-          <GridColumn width={7}>
-            <Awards/>
+          <GridColumn>
+            <Skills/>
           </GridColumn>
-        </StyledWrapper>
-        <Skills/>
+        </Grid>
       </StyledContainer>
     )
   }
