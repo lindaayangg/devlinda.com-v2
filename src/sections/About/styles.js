@@ -5,7 +5,7 @@ export const StyledIntro = styled.div`
   &&& {
     font-size: 17px;
     line-height: 1.8rem;
-    color: #000057;
+    color: #000000;
   }
 `;
 

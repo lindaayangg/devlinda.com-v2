@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import {StyledDegree, StyledEducationContainer, StyledSchoolName, StyledUniversityIcon, StyledYear} from "./styles";
+import {StyledDegree, StyledSchoolName, StyledUniversityIcon, StyledYear} from "./styles";
 import {Header, HeaderContent} from "semantic-ui-react";
 
 class Education extends Component {
   render() {
     return (
-      <StyledEducationContainer>
+      <div>
         <Header as='h1'>
           <StyledUniversityIcon name='graduation'/>
           <StyledSchoolName>
@@ -17,7 +17,7 @@ class Education extends Component {
           <HeaderContent>Candidate for Bachelor of Mathematics</HeaderContent>
           <HeaderContent>Computational Mathematics Major</HeaderContent>
         </StyledDegree>
-      </StyledEducationContainer>
+      </div>
     )
   }
 }

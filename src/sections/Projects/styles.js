@@ -3,7 +3,7 @@ import {CardHeader, Icon} from "semantic-ui-react";
 
 export const StyledProjectContainer = styled.div`
   &&& {
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 30px;
     width: 90%;
   }
