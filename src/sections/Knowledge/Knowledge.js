@@ -9,7 +9,7 @@ import {StyledWrapper} from "./styles";
 class Knowledge extends Component {
   render() {
     return (
-      <StyledContainer>
+      <StyledContainer id='knowledge' name='knowledge'>
         <StyledHeaderWrapper>
           <StyledHeader>
             What I know

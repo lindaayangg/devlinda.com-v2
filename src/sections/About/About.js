@@ -9,7 +9,7 @@ class About extends Component {
 
   renderDescription() {
     return (
-      <StyledAboutContainer>
+      <StyledAboutContainer id="about" name="about">
         <StyledHeaderWrapper>
           <StyledHeader>
             Get To Know Me

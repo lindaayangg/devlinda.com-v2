@@ -10,10 +10,12 @@ import {
   StyledHireMeButton,
   StyledImage,
   StyledImageContainer,
+  StyledLabelIcon,
   StyledMenuItem,
   StyledNavList,
   StyledSocialMediaButtons
 } from "./styles";
+import {Link} from "react-scroll";
 
 class StickySidebar extends Component {
   render() {
@@ -34,28 +36,70 @@ class StickySidebar extends Component {
         <StyledNavList>
           <div>
             <StyledHeaderContainer as='h5'>
-              <Icon name='user'/>
-              <StyledHeaderLabel>About Me</StyledHeaderLabel>
+              <StyledLabelIcon name='user'/>
+              <StyledHeaderLabel
+                as={Link}
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}>
+                About Me
+              </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
-              <Icon name='graduation'/>
-              <StyledHeaderLabel>Skills & Education</StyledHeaderLabel>
+              <StyledLabelIcon name='graduation'/>
+              <StyledHeaderLabel
+                as={Link}
+                to="knowledge"
+                spy={true}
+                smooth={true}
+                duration={500}>
+                Skills & Education
+              </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
-              <Icon name='briefcase'/>
-              <StyledHeaderLabel>Experience</StyledHeaderLabel>
+              <StyledLabelIcon name='briefcase'/>
+              <StyledHeaderLabel
+                as={Link}
+                to="experience"
+                spy={true}
+                smooth={true}
+                duration={500}>
+                Experience
+              </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
-              <Icon name='lightbulb'/>
-              <StyledHeaderLabel>Projects</StyledHeaderLabel>
+              <StyledLabelIcon name='lightbulb'/>
+              <StyledHeaderLabel
+                as={Link}
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={500}>
+                Projects
+              </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
-              <Icon name='file text'/>
-              <StyledHeaderLabel>Resume</StyledHeaderLabel>
+              <StyledLabelIcon name='file text'/>
+              <StyledHeaderLabel
+                as={Link}
+                to="https://devlinda.com/assets/Resume_Linda_Yang.pdf"
+                spy={true}
+                smooth={true}
+                duration={500}>
+                Resume
+              </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
-              <Icon name='thumbs up'/>
-              <StyledHeaderLabel>Fun Facts & Stuff</StyledHeaderLabel>
+              <StyledLabelIcon name='thumbs up'/>
+              <StyledHeaderLabel
+                as={Link}
+                to="fun"
+                spy={true}
+                smooth={true}
+                duration={500}>
+                Fun Facts & Stuff
+              </StyledHeaderLabel>
             </StyledHeaderContainer>
           </div>
         </StyledNavList>

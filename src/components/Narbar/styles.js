@@ -21,6 +21,7 @@ export const StyledNavbarItem = styled(MenuItem)`
     color: #fff !important;
     font-size: 15px;
     font-weight: 800;
+    cursor: pointer;
     &:before { 
       background: none !important;
     }
