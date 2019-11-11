@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button, Divider, Header, HeaderContent, Image, MenuItem} from "semantic-ui-react";
+import {Button, Divider, Header, HeaderContent, Icon, Image, MenuItem} from "semantic-ui-react";
 
 export const StyledMenuItem = styled(MenuItem)`
   &&& {
@@ -62,6 +62,17 @@ export const StyledHeaderContainer = styled(Header)`
 export const StyledHeaderLabel = styled(HeaderContent)`
   &&& {
     margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      color: rgba(0,0,0,0.8);
+    }
+  }
+`;
+
+export const StyledLabelIcon = styled(Icon)`
+  &&& {
+    cursor: pointer;
   }
 `;
 

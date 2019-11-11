@@ -6,7 +6,7 @@ import Work from "../../components/Work/Work";
 class Experience extends Component {
   render() {
     return (
-      <StyledExperienceContainer>
+      <StyledExperienceContainer id="experience" name="experience">
         <StyledHeaderWrapper>
           <StyledHeader>
             Where I have been

@@ -6,7 +6,7 @@ import ProjectCarousel from "../../components/ProjectCarousel/ProjectCarousel";
 class Projects extends Component {
   render() {
     return (
-      <StyledProjectContainer>
+      <StyledProjectContainer id="projects" name="projects">
         <StyledHeaderWrapper>
           <StyledHeader>
             What I have done
