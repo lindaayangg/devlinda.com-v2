@@ -1,3 +1,6 @@
+import {StyledLocationWrapper} from "../sections/About/styles";
+import React from "react";
+
 const strings = {
   description: {
     name: "Hey there! My name is Linda and my friends call me Lindor. " +
@@ -14,6 +17,9 @@ const strings = {
     backend: "Backend",
     others: "Others",
   },
+  phone: "416-990-8432",
+  email: "xiaoling.yang@uwaterloo.ca",
+  location: "Toronto, ON • Waterloo, ON • Boston, MA • Winnipeg, MB",
   navbar: {
     home: 'HOME',
     skills: 'SKILLS',

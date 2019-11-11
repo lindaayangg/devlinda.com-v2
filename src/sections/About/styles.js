@@ -26,3 +26,19 @@ export const StyledIcon = styled(Icon)`
   }
 `;
 
+export const StyledEmailWrapper = styled.div`
+  &&& {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 1.5rem;
+  }
+`;
+
+export const StyledLocationWrapper = styled.div`
+  &&& {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 1.5rem;
+  }
+`;
+
