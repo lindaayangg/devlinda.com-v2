@@ -4,17 +4,57 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import {Card, Image, Label, LabelGroup} from "semantic-ui-react";
 import {StyledArrows, StyledCardWrapper, StyledProjectName} from "../../sections/Projects/styles";
 
-
 class ProjectCarousel extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      width: 0,
+      height: 0
+    };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({width: window.innerWidth, height: window.innerHeight});
+  }
+
   render() {
+    const {width} = this.state;
+    const carouselSettings = (width < 1400) ?
+      (width < 767) ? {
+        infinite: true,
+        animationSpeed: 1000,
+        slidesPerPage: 1,
+        arrowLeft: <StyledArrows name="angle double left" size='large'/>,
+        arrowRight: <StyledArrows name="angle double right" size='large'/>,
+        addArrowClickHandler: true,
+      } : {
+        infinite: true,
+        animationSpeed: 1000,
+        slidesPerPage: 2,
+        arrowLeft: <StyledArrows name="angle double left" size='large'/>,
+        arrowRight: <StyledArrows name="angle double right" size='large'/>,
+        addArrowClickHandler: true,
+      } : {
+        infinite: true,
+        animationSpeed: 1000,
+        slidesPerPage: 3,
+        arrowLeft: <StyledArrows name="angle double left" size='large'/>,
+        arrowRight: <StyledArrows name="angle double right" size='large'/>,
+        addArrowClickHandler: true,
+      };
     return (
       <Carousel
-        arrowLeft={<StyledArrows name="angle double left" size='large'/>}
-        arrowRight={<StyledArrows name="angle double right" size='large'/>}
-        addArrowClickHandler
-        animationSpeed={1000}
-        slidesPerPage={3}
-        infinite
+        {...carouselSettings}
       >
         <StyledCardWrapper>
           <Card>

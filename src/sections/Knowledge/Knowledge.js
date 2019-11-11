@@ -16,17 +16,17 @@ class Knowledge extends Component {
           </StyledHeader>
         </StyledHeaderWrapper>
         <Grid columns={2}>
-          <GridColumn>
+          <GridColumn mobile={16} computer={8}>
             <StyledWrapper columns={2}>
-              <GridRow width={7}>
+              <GridRow>
                 <Education/>
               </GridRow>
-              <GridRow width={7}>
+              <GridRow>
                 <Awards/>
               </GridRow>
             </StyledWrapper>
           </GridColumn>
-          <GridColumn>
+          <GridColumn mobile={16} computer={7}>
             <Skills/>
           </GridColumn>
         </Grid>

@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import {Card, Divider, Grid, Label, Segment} from "semantic-ui-react";
+import {Card, Divider, Grid, Label, Responsive, Segment} from "semantic-ui-react";
 import {
   StyledCard,
   StyledCircleIcon, StyledCompanyName,
   StyledCompanyWrapperLeft,
   StyledCompanyWrapperRight,
   StyledImage,
-  StyledLeftColumn,
+  StyledLeftColumn, StyledLeftColumnReversed,
   StyledSegment, StyledTitleName,
   StyledToolsLabelGroup,
   StyledWorkExperienceWrapper
@@ -18,7 +18,7 @@ class Work extends Component {
       <StyledWorkExperienceWrapper>
         <Segment basic>
           <Grid columns={2} relaxed='very'>
-            <StyledLeftColumn verticalAlign='middle'>
+            <StyledLeftColumn verticalAlign='middle' mobile={16} tablet={5} computer={8}>
               <StyledImage src='https://pbs.twimg.com/profile_images/1002593099829346304/kl4SELak_400x400.jpg'
                            circular/>
               <StyledCompanyWrapperLeft>
@@ -26,7 +26,7 @@ class Work extends Component {
                 <div>Winnipeg, Manitoba</div>
               </StyledCompanyWrapperLeft>
             </StyledLeftColumn>
-            <Grid.Column>
+            <Grid.Column mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
                   <StyledTitleName>Junior Software Developer | Internship</StyledTitleName>
@@ -58,11 +58,23 @@ class Work extends Component {
               </StyledCard>
             </Grid.Column>
           </Grid>
-          <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
+          <Responsive {...Responsive.onlyComputer}>
+            <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
+          </Responsive>
         </Segment>
+
         <StyledSegment basic>
-          <Grid columns={2} relaxed='very'>
-            <StyledLeftColumn>
+          <Grid columns={2} relaxed='very' reversed='computer'>
+            <StyledLeftColumnReversed mobile={16} tablet={5} computer={8} verticalAlign='middle'>
+              <StyledImage
+                src='https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1483638612/ecf5n21df2g2soxbtar0.png'
+                circular/>
+              <StyledCompanyWrapperRight>
+                <StyledCompanyName>Formlabs</StyledCompanyName>
+                <div>Boston, Massachusetts</div>
+              </StyledCompanyWrapperRight>
+            </StyledLeftColumnReversed>
+            <Grid.Column verticalAlign='middle' mobile={16} tablet={11}  computer={8}>
               <StyledCard>
                 <Card.Content>
                   <StyledTitleName>Web Developer | Internship</StyledTitleName>
@@ -87,22 +99,16 @@ class Work extends Component {
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
-            </StyledLeftColumn>
-            <Grid.Column verticalAlign='middle'>
-              <StyledImage
-                src='https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1483638612/ecf5n21df2g2soxbtar0.png'
-                circular/>
-              <StyledCompanyWrapperRight>
-                <StyledCompanyName>Formlabs</StyledCompanyName>
-                <div>Boston, Massachusetts</div>
-              </StyledCompanyWrapperRight>
             </Grid.Column>
           </Grid>
-          <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
+          <Responsive {...Responsive.onlyComputer}>
+            <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
+          </Responsive>
         </StyledSegment>
+
         <StyledSegment basic>
           <Grid columns={2} relaxed='very'>
-            <StyledLeftColumn verticalAlign='middle'>
+            <StyledLeftColumn verticalAlign='middle' mobile={16} tablet={5} computer={8}>
               <StyledImage src='https://pbs.twimg.com/profile_images/1042862952334782464/uXSQsin3_400x400.jpg'
                            circular/>
               <StyledCompanyWrapperLeft>
@@ -110,7 +116,7 @@ class Work extends Component {
                 <div>Mississauga, Ontario</div>
               </StyledCompanyWrapperLeft>
             </StyledLeftColumn>
-            <Grid.Column>
+            <Grid.Column mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
                   <StyledTitleName>Ecommerce Web Developer | Internship</StyledTitleName>
@@ -130,11 +136,21 @@ class Work extends Component {
               </StyledCard>
             </Grid.Column>
           </Grid>
-          <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
+          <Responsive {...Responsive.onlyComputer}>
+            <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
+          </Responsive>
         </StyledSegment>
+
         <StyledSegment basic>
-          <Grid columns={2} relaxed='very'>
-            <StyledLeftColumn>
+          <Grid columns={2} relaxed='very' reversed='computer'>
+            <StyledLeftColumnReversed mobile={16} tablet={5} computer={8} verticalAlign='middle'>
+              <StyledImage src='https://pbs.twimg.com/profile_images/461236521689808897/7g4YTWrE.png' circular/>
+              <StyledCompanyWrapperRight>
+                <StyledCompanyName>Shoppers Drug Mart</StyledCompanyName>
+                <div>Scarborough, Ontario</div>
+              </StyledCompanyWrapperRight>
+            </StyledLeftColumnReversed>
+            <Grid.Column verticalAlign='middle' mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
                   <StyledTitleName>Pharmacy Technician</StyledTitleName>
@@ -148,16 +164,11 @@ class Work extends Component {
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
-            </StyledLeftColumn>
-            <Grid.Column verticalAlign='middle'>
-              <StyledImage src='https://pbs.twimg.com/profile_images/461236521689808897/7g4YTWrE.png' circular/>
-              <StyledCompanyWrapperRight>
-                <StyledCompanyName>Shoppers Drug Mart</StyledCompanyName>
-                <div>Scarborough, Ontario</div>
-              </StyledCompanyWrapperRight>
             </Grid.Column>
           </Grid>
-          <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
+          <Responsive {...Responsive.onlyComputer}>
+            <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
+          </Responsive>
         </StyledSegment>
       </StyledWorkExperienceWrapper>
     )
