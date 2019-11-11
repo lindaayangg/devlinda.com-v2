@@ -6,6 +6,9 @@ export const StyledProjectContainer = styled.div`
     margin-top: 50px;
     margin-bottom: 30px;
     width: 98%;
+    @media (max-width: 1183px) {
+      width: 90%;
+    }
   }
 `;
 

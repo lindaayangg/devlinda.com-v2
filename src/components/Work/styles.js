@@ -73,14 +73,6 @@ export const StyledCompanyWrapperLeft = styled(GridColumn)`
     border-right-color: #DB1793;
     padding-right: 8px;
     margin-top: 15px;
-    // @media (max-width: 991px) {
-    //   border-left-style: solid;
-    //   border-left-color: #DB1793;
-    //   padding-left: 8px;
-    //   border-right-style: none;
-    //   border-right-color: transparent;
-    //   text-align: start;
-    // }
     @media (max-width: 767px) {
       border-right-style: none;
       border-left-style: none;

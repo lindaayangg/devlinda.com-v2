@@ -29,7 +29,7 @@ class ProjectCarousel extends Component {
 
   render() {
     const {width} = this.state;
-    const carouselSettings = (width < 1400) ?
+    const carouselSettings = (width < 1300) ?
       (width < 767) ? {
         infinite: true,
         animationSpeed: 1000,
