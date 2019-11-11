@@ -11,6 +11,9 @@ export const StyledCardDescription = styled(CardDescription)`
 export const StyledCard = styled(Card)`
   &&& {
     width: 225px !important;
+    @media (max-width: 991px) {
+      width: 300px !important;
+    }
   }
 `;
 

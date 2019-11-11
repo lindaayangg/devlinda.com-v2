@@ -16,7 +16,7 @@ class About extends Component {
           </StyledHeader>
         </StyledHeaderWrapper>
         <StyledGlobalGridContainer columns={2} relaxed='very'>
-          <GridColumn width={8}>
+          <GridColumn mobile={16} tablet={8} computer={8}>
             <StyledIntro>
               {strings.description.name}<br/><br/>
               {strings.description.story}<br/><br/>
@@ -24,7 +24,7 @@ class About extends Component {
               {strings.description.hobby}
             </StyledIntro>
           </GridColumn>
-          <GridColumn width={7}>
+          <GridColumn mobile={16} tablet={8} computer={8}>
             <InfoCard></InfoCard>
           </GridColumn>
         </StyledGlobalGridContainer>

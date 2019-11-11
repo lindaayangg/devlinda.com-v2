@@ -5,13 +5,16 @@ import Knowledge from "../sections/Knowledge/Knowledge";
 import {StyledArticle, StyledMenu} from "./styles";
 import Experience from "../sections/Experience/Experience";
 import Projects from "../sections/Projects/Project";
+import {Responsive} from "semantic-ui-react";
 
 function Home() {
   return (
     <div>
-      <StyledMenu className='vertical left fixed'>
-        <StickySidebar/>
-      </StyledMenu>
+      <Responsive {...Responsive.onlyLargeScreen}>
+        <StyledMenu className='vertical left fixed'>
+          <StickySidebar/>
+        </StyledMenu>
+      </Responsive>
       <StyledArticle>
         <About/>
         <Knowledge/>
