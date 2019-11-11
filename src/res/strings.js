@@ -13,6 +13,13 @@ const strings = {
     frontend: "Frontend",
     backend: "Backend",
     others: "Others",
+  },
+  navbar: {
+    home: 'HOME',
+    skills: 'SKILLS',
+    experience: 'EXPERIENCE',
+    projects: 'PROJECTS',
+    resume: 'RESUME'
   }
 };
 

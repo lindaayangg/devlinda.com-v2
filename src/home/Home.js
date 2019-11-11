@@ -6,11 +6,15 @@ import {StyledArticle, StyledMenu} from "./styles";
 import Experience from "../sections/Experience/Experience";
 import Projects from "../sections/Projects/Project";
 import {Responsive} from "semantic-ui-react";
+import Navbar from "../components/Narbar/Navbar";
 
 function Home() {
   return (
     <div>
-      <Responsive {...Responsive.onlyLargeScreen}>
+      <Responsive maxWidth={1183}>
+        <Navbar/>
+      </Responsive>
+      <Responsive minWidth={1184}>
         <StyledMenu className='vertical left fixed'>
           <StickySidebar/>
         </StyledMenu>
