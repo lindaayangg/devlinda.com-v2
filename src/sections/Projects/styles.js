@@ -5,7 +5,7 @@ export const StyledProjectContainer = styled.div`
   &&& {
     margin-top: 50px;
     margin-bottom: 30px;
-    width: 90%;
+    width: 98%;
   }
 `;
 
