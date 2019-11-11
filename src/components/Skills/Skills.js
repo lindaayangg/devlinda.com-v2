@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 import {GridColumn, GridRow, Icon, Label, List} from "semantic-ui-react";
-import {StyledCheckIcon, StyledGridContainer, StyledSegmentBox, StyledSkillsWrapper, StyledSpan} from "./styles";
+import {
+  StyledCheckIcon,
+  StyledGridContainer,
+  StyledGridContainerTablet,
+  StyledSegmentBox,
+  StyledSkillsWrapper,
+  StyledSpan
+} from "./styles";
 import strings from "../../res/strings";
 
 class Skills extends Component {
@@ -126,7 +133,7 @@ class Skills extends Component {
             </GridRow>
           </StyledGridContainer>
 
-          : <StyledGridContainer relaxed='very'>
+          : <StyledGridContainerTablet relaxed='very'>
             <GridColumn computer={8}>
               <StyledSegmentBox raised>
                 <Label as='a' color='pink' ribbon>
@@ -219,7 +226,7 @@ class Skills extends Component {
                 </StyledSkillsWrapper>
               </StyledSegmentBox>
             </GridColumn>
-          </StyledGridContainer>
+          </StyledGridContainerTablet>
         }
       </div>
     )

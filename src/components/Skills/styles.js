@@ -6,10 +6,17 @@ export const StyledGridContainer = styled(Grid)`
     margin-top: 20px !important;
     margin-left: 10px !important;
     padding: 20px !important;
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       margin-top: 0px !important;
-      padding: 0px !important;
+      margin-left: 0px !important;
+      padding: 0px !important
     }
+  }
+`;
+
+export const StyledGridContainerTablet = styled(Grid)`
+  &&&{
+  
   }
 `;
 
