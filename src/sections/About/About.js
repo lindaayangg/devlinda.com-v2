@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import {StyledIntro} from "./styles";
+import {StyledAboutContainer, StyledIntro} from "./styles";
 import strings from "../../res/strings";
 import {GridColumn} from "semantic-ui-react";
 import InfoCard from "../../components/InfoCard/InfoCard";
-import {StyledContainer, StyledGlobalGridContainer, StyledHeader, StyledHeaderWrapper} from "../../res/styles";
+import {StyledGlobalGridContainer, StyledHeader, StyledHeaderWrapper} from "../../res/styles";
 
 class About extends Component {
 
   renderDescription() {
     return (
-      <StyledContainer>
+      <StyledAboutContainer>
         <StyledHeaderWrapper>
           <StyledHeader>
             Get To Know Me
@@ -28,7 +28,7 @@ class About extends Component {
             <InfoCard></InfoCard>
           </GridColumn>
         </StyledGlobalGridContainer>
-      </StyledContainer>
+      </StyledAboutContainer>
     )
   }
 
