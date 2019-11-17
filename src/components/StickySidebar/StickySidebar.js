@@ -16,22 +16,29 @@ import {
   StyledSocialMediaButtons
 } from "./styles";
 import {Link} from "react-scroll";
+import strings from "../../res/strings";
+import sidebarprofile from '../../res/images/sidebarprofile.png';
 
 class StickySidebar extends Component {
   render() {
     return (
       <div>
         <StyledMenuItem>
-          LINDA YANG
+          {strings.sidebar.name}
         </StyledMenuItem>
         <StyledImageContainer>
-          <StyledImage src='https://react.semantic-ui.com/images/wireframe/square-image.png' circular/>
+          <StyledImage src={sidebarprofile} circular/>
         </StyledImageContainer>
-        <StyledSocialMediaButtons circular icon='linkedin' size='large'/>
-        <StyledSocialMediaButtons circular icon='github alternate' size='large'/>
-        <StyledSocialMediaButtons circular icon='mail' size='large'/>
-        <StyledSocialMediaButtons circular icon='google play' size='large'/>
-        <StyledSocialMediaButtons circular icon='facebook' size='large'/>
+        <StyledSocialMediaButtons circular icon='linkedin' size='large' href="https://www.linkedin.com/in/lindaayangg/"
+                                  target="_blank"/>
+        <StyledSocialMediaButtons circular icon='github alternate' size='large' href="https://github.com/lindaayangg"
+                                  target="_blank"/>
+        <StyledSocialMediaButtons circular icon='mail' size='large' href='mailto:xiaoling.yang@uwaterloo.ca'/>
+        <StyledSocialMediaButtons circular icon='google play' size='large'
+                                  href='https://play.google.com/store/apps/details?id=com.waveitover.waveit&rdid=com.waveitover.waveit'
+                                  target="_blank"/>
+        <StyledSocialMediaButtons circular icon='facebook' size='large' href='https://www.facebook.com/lindayanggg'
+                                  target="_blank"/>
         <StyledDivider/>
         <StyledNavList>
           <div>
@@ -43,7 +50,7 @@ class StickySidebar extends Component {
                 spy={true}
                 smooth={true}
                 duration={500}>
-                About Me
+                {strings.sidebar.about}
               </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
@@ -54,7 +61,7 @@ class StickySidebar extends Component {
                 spy={true}
                 smooth={true}
                 duration={500}>
-                Skills & Education
+                {strings.sidebar.skills}
               </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
@@ -65,7 +72,7 @@ class StickySidebar extends Component {
                 spy={true}
                 smooth={true}
                 duration={500}>
-                Experience
+                {strings.sidebar.experience}
               </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
@@ -76,18 +83,16 @@ class StickySidebar extends Component {
                 spy={true}
                 smooth={true}
                 duration={500}>
-                Projects
+                {strings.sidebar.projects}
               </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
               <StyledLabelIcon name='file text'/>
               <StyledHeaderLabel
-                as={Link}
-                to="https://devlinda.com/assets/Resume_Linda_Yang.pdf"
-                spy={true}
-                smooth={true}
-                duration={500}>
-                Resume
+                href="https://devlinda.com/assets/Resume_Linda_Yang.pdf"
+                target='_blank'
+              >
+                {strings.sidebar.resume}
               </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
@@ -98,19 +103,22 @@ class StickySidebar extends Component {
                 spy={true}
                 smooth={true}
                 duration={500}>
-                Fun Facts & Stuff
+                {strings.sidebar.fun}
               </StyledHeaderLabel>
             </StyledHeaderContainer>
           </div>
         </StyledNavList>
-        <StyledHireMeButton>
-          <Icon name='send'/> Hire Me
+        <StyledHireMeButton href='mailto:xiaoling.yang@uwaterloo.ca'>
+          <Icon name='send'/>
+          {strings.sidebar.hire}
         </StyledHireMeButton>
         <StyledDivider/>
         <StyledDarkModeContainer>
           <StyledDarkModeHeaderContainer as='h6'>
             <Icon name='power off'/>
-            <StyledDarkModeContent>Dark Mode</StyledDarkModeContent>
+            <StyledDarkModeContent>
+              {strings.sidebar.darkMode}
+            </StyledDarkModeContent>
           </StyledDarkModeHeaderContainer>
           <Radio toggle/>
         </StyledDarkModeContainer>

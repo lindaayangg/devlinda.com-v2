@@ -11,6 +11,10 @@ import {
   StyledToolsLabelGroup,
   StyledWorkExperienceWrapper
 } from "./styles";
+import skip from '../../res/images/skip.jpg';
+import formlabs from '../../res/images/formlabs.png';
+import sydneystone from '../../res/images/sydneystone.jpg';
+import shoppers from '../../res/images/shoppers.png';
 
 class Work extends Component {
   render() {
@@ -19,7 +23,7 @@ class Work extends Component {
         <Segment basic>
           <Grid columns={2} relaxed='very'>
             <StyledLeftColumn verticalAlign='middle' mobile={16} tablet={5} computer={8}>
-              <StyledImage src='https://pbs.twimg.com/profile_images/1002593099829346304/kl4SELak_400x400.jpg'
+              <StyledImage src={skip}
                            circular/>
               <StyledCompanyWrapperLeft>
                 <StyledCompanyName>SkipTheDishes</StyledCompanyName>
@@ -68,7 +72,7 @@ class Work extends Component {
           <Grid columns={2} relaxed='very' reversed='computer'>
             <StyledLeftColumnReversed mobile={16} tablet={5} computer={8} verticalAlign='middle'>
               <StyledImage
-                src='https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1483638612/ecf5n21df2g2soxbtar0.png'
+                src={formlabs}
                 circular/>
               <StyledCompanyWrapperRight>
                 <StyledCompanyName>Formlabs</StyledCompanyName>
@@ -110,7 +114,7 @@ class Work extends Component {
         <StyledSegment basic>
           <Grid columns={2} relaxed='very'>
             <StyledLeftColumn verticalAlign='middle' mobile={16} tablet={5} computer={8}>
-              <StyledImage src='https://pbs.twimg.com/profile_images/1042862952334782464/uXSQsin3_400x400.jpg'
+              <StyledImage src={sydneystone}
                            circular/>
               <StyledCompanyWrapperLeft>
                 <StyledCompanyName>Sydney Stone</StyledCompanyName>
@@ -145,7 +149,7 @@ class Work extends Component {
         <StyledSegment basic>
           <Grid columns={2} relaxed='very' reversed='computer'>
             <StyledLeftColumnReversed mobile={16} tablet={5} computer={8} verticalAlign='middle'>
-              <StyledImage src='https://pbs.twimg.com/profile_images/461236521689808897/7g4YTWrE.png' circular/>
+              <StyledImage src={shoppers} circular/>
               <StyledCompanyWrapperRight>
                 <StyledCompanyName>Shoppers Drug Mart</StyledCompanyName>
                 <div>Scarborough, Ontario</div>

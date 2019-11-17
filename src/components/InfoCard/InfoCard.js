@@ -9,16 +9,17 @@ import {
   StyledSocialMediaButtonsWrapper
 } from "./styles";
 import strings from "../../res/strings";
+import profile from '../../res/images/profile.jpg';
 
 class InfoCard extends Component {
   render() {
     return (
       <StyledCard>
-        <Image src='https://devlinda.com/assets/img/profile.png' wrapped ui={false}/>
+        <Image src={profile} wrapped ui={false}/>
         <Card.Content>
-          <Card.Header>Linda Yang</Card.Header>
+          <Card.Header>{strings.infoCard.name}</Card.Header>
           <Card.Meta>
-            <span>Software Developer</span>
+            <span>{strings.infoCard.title}</span>
           </Card.Meta>
           <Responsive minWidth={1184}>
             <StyledCardDescription>
@@ -34,11 +35,15 @@ class InfoCard extends Component {
           </Responsive>
           <Responsive maxWidth={1183}>
             <StyledSocialMediaButtonsWrapper>
-              <StyledSocialMediaButtonsInfo circular icon='linkedin' size='small'/>
-              <StyledSocialMediaButtonsInfo circular icon='github alternate' size='small'/>
-              <StyledSocialMediaButtonsInfo circular icon='mail' size='small'/>
-              <StyledSocialMediaButtonsInfo circular icon='google play' size='small'/>
-              <StyledSocialMediaButtonsInfo circular icon='facebook' size='small'/>
+              <StyledSocialMediaButtonsInfo circular icon='linkedin' size='small' href="https://www.linkedin.com/in/lindaayangg/"
+                                            target="_blank"/>
+              <StyledSocialMediaButtonsInfo circular icon='github alternate' size='small' href="https://github.com/lindaayangg"
+                                            target="_blank"/>
+              <StyledSocialMediaButtonsInfo circular icon='mail' size='small' href='mailto:xiaoling.yang@uwaterloo.ca'/>
+              <StyledSocialMediaButtonsInfo circular icon='google play' size='small' href='https://play.google.com/store/apps/details?id=com.waveitover.waveit&rdid=com.waveitover.waveit'
+                                            target="_blank"/>
+              <StyledSocialMediaButtonsInfo circular icon='facebook' size='small' href='https://www.facebook.com/lindayanggg'
+                                            target="_blank"/>
             </StyledSocialMediaButtonsWrapper>
           </Responsive>
         </Card.Content>

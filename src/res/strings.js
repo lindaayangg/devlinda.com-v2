@@ -2,6 +2,21 @@ import {StyledLocationWrapper} from "../sections/About/styles";
 import React from "react";
 
 const strings = {
+  sidebar: {
+    name: 'LINDA YANG',
+    about: 'About Me',
+    skills: 'Skills & Education',
+    experience: 'Experience',
+    projects: 'Projects',
+    resume: 'Resume',
+    fun: 'Fun Facts & Stuff',
+    hire: 'Hire Me',
+    darkMode: 'Dark Mode',
+  },
+  infoCard: {
+    name: 'Linda Yang',
+    title: 'Software Developer',
+  },
   description: {
     name: "Hey there! My name is Linda and my friends call me Lindor. " +
       "I am a third year Computational Mathematics student at the University of Waterloo.",
@@ -21,7 +36,7 @@ const strings = {
   email: "xiaoling.yang@uwaterloo.ca",
   location: "Toronto, ON • Waterloo, ON • Boston, MA • Winnipeg, MB",
   navbar: {
-    home: 'HOME',
+    about: 'ABOUT',
     skills: 'SKILLS',
     experience: 'EXPERIENCE',
     projects: 'PROJECTS',
