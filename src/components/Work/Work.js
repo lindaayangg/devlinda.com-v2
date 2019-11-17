@@ -53,6 +53,7 @@ class Work extends Component {
                     <Label>Jenkins</Label>
                     <Label>Papertrail</Label>
                     <Label>Jest & Enzyme</Label>
+                    <Label>Flyway</Label>
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
