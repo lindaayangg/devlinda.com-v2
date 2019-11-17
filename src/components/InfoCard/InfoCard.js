@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
-import {Card, Image} from "semantic-ui-react";
+import {Card, Image, Responsive} from "semantic-ui-react";
 import {StyledIcon} from "../../sections/About/styles";
-import {StyledCardDescription, StyledCard, StyledEmail} from "./styles";
+import {
+  StyledCard,
+  StyledCardDescription,
+  StyledEmail,
+  StyledSocialMediaButtonsInfo,
+  StyledSocialMediaButtonsWrapper
+} from "./styles";
+import strings from "../../res/strings";
 
 class InfoCard extends Component {
   render() {
@@ -13,16 +20,27 @@ class InfoCard extends Component {
           <Card.Meta>
             <span>Software Developer</span>
           </Card.Meta>
-          <StyledCardDescription>
-            <StyledIcon name="mail" link/>
-            <StyledEmail href='mailto:xiaoling.yang@uwaterloo.ca'> xiaoling.yang@uwaterloo.ca</StyledEmail>
-          </StyledCardDescription>
-          <StyledCardDescription>
-            <StyledIcon name="phone"/> 416-990-8432
-          </StyledCardDescription>
-          <StyledCardDescription>
-            <StyledIcon name="map marker alternate"/> Toronto, ON • Waterloo, ON • Boston, MA • Winnipeg, MB
-          </StyledCardDescription>
+          <Responsive minWidth={1184}>
+            <StyledCardDescription>
+              <StyledIcon name="mail" link/>
+              <StyledEmail href='mailto:xiaoling.yang@uwaterloo.ca'> {strings.email}</StyledEmail>
+            </StyledCardDescription>
+            <StyledCardDescription>
+              <StyledIcon name="phone"/> {strings.phone}
+            </StyledCardDescription>
+            <StyledCardDescription>
+              <StyledIcon name="map marker alternate"/> {strings.location}
+            </StyledCardDescription>
+          </Responsive>
+          <Responsive maxWidth={1183}>
+            <StyledSocialMediaButtonsWrapper>
+              <StyledSocialMediaButtonsInfo circular icon='linkedin' size='small'/>
+              <StyledSocialMediaButtonsInfo circular icon='github alternate' size='small'/>
+              <StyledSocialMediaButtonsInfo circular icon='mail' size='small'/>
+              <StyledSocialMediaButtonsInfo circular icon='google play' size='small'/>
+              <StyledSocialMediaButtonsInfo circular icon='facebook' size='small'/>
+            </StyledSocialMediaButtonsWrapper>
+          </Responsive>
         </Card.Content>
       </StyledCard>
     )
