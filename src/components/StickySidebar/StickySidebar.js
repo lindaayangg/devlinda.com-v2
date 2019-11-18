@@ -12,6 +12,7 @@ import {
   StyledImage,
   StyledImageContainer,
   StyledLabelIcon,
+  StyledMenu,
   StyledMenuItem,
   StyledNavList,
   StyledSocialMediaButtons
@@ -21,9 +22,21 @@ import strings from "../../res/strings";
 import sidebarprofile from '../../res/images/sidebarprofile.png';
 
 class StickySidebar extends Component {
+  state = {
+    darkMode: false
+  };
+
+  handleDarkMode = () => {
+    this.setState((prevState) =>
+      ({ darkMode: !prevState.darkMode })
+    )
+  };
+
   render() {
     return (
-      <div>
+      <StyledMenu
+        darkMode={this.state.darkMode}
+        className='vertical left fixed'>
         <StyledMenuItem>
           {strings.sidebar.name}
         </StyledMenuItem>
@@ -121,12 +134,15 @@ class StickySidebar extends Component {
               {strings.sidebar.darkMode}
             </StyledDarkModeContent>
           </StyledDarkModeHeaderContainer>
-          <Radio toggle/>
+          <Radio
+            toggle
+            onClick={this.handleDarkMode}
+          />
         </StyledDarkModeContainer>
         <StyledCopyRightWrapper>
           {strings.copyright}
         </StyledCopyRightWrapper>
-      </div>
+      </StyledMenu>
     )
   }
 }

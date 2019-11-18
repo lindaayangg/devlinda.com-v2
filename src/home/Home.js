@@ -2,7 +2,7 @@ import React from 'react';
 import StickySidebar from "../components/StickySidebar/StickySidebar";
 import About from "../sections/About/About";
 import Knowledge from "../sections/Knowledge/Knowledge";
-import {StyledArticle, StyledMenu} from "./styles";
+import {StyledArticle} from "./styles";
 import Experience from "../sections/Experience/Experience";
 import Projects from "../sections/Projects/Project";
 import {Responsive} from "semantic-ui-react";
@@ -16,9 +16,7 @@ function Home() {
         <Navbar/>
       </Responsive>
       <Responsive minWidth={1184}>
-        <StyledMenu className='vertical left fixed'>
-          <StickySidebar/>
-        </StyledMenu>
+        <StickySidebar/>
       </Responsive>
       <StyledArticle>
         <About/>

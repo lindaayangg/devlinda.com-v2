@@ -1,5 +1,15 @@
 import styled from "styled-components";
-import {Button, Divider, Header, HeaderContent, Icon, Image, MenuItem} from "semantic-ui-react";
+import {Button, Divider, Header, HeaderContent, Icon, Image, Menu, MenuItem} from "semantic-ui-react";
+
+export const StyledMenu = styled(Menu)`
+  &&& {
+    overflow-y: auto;
+    width: 280px !important;
+    border-right: none;
+    text-align: center;
+    background-color: ${props => props.darkMode ? '#000 !important' : '#DB1793 !important'}
+  }
+`;
 
 export const StyledMenuItem = styled(MenuItem)`
   &&& {
