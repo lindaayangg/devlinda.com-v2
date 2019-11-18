@@ -3,6 +3,11 @@ import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import {Card, Image, Label, LabelGroup} from "semantic-ui-react";
 import {StyledArrows, StyledCardWrapper, StyledProjectName} from "../../sections/Projects/styles";
+import budgetbuddy from '../../res/images/budgetbuddy.png';
+import wave from '../../res/images/wave.png';
+import groshare from '../../res/images/groshare.png';
+import safeme from '../../res/images/safeme.png';
+import distractic from '../../res/images/distractic.png'
 
 class ProjectCarousel extends Component {
   constructor(props) {
@@ -58,7 +63,7 @@ class ProjectCarousel extends Component {
       >
         <StyledCardWrapper>
           <Card>
-            <Image src='https://devlinda.com/assets/img/projects/waveit.png' wrapped ui={false}/>
+            <Image src={wave} wrapped ui={false}/>
             <Card.Content>
               <StyledProjectName>
                 Wave
@@ -88,7 +93,7 @@ class ProjectCarousel extends Component {
         </StyledCardWrapper>
         <StyledCardWrapper>
           <Card>
-            <Image src='https://devlinda.com/assets/img/projects/budgetbuddy.png' wrapped ui={false}/>
+            <Image src={budgetbuddy} wrapped ui={false}/>
             <Card.Content>
               <StyledProjectName>BudgetBuddy</StyledProjectName>
               <Card.Meta>
@@ -111,7 +116,7 @@ class ProjectCarousel extends Component {
         </StyledCardWrapper>
         <StyledCardWrapper>
           <Card>
-            <Image src='https://devlinda.com/assets/img/projects/distractic1.png' wrapped ui={false}/>
+            <Image src={distractic} wrapped ui={false}/>
             <Card.Content>
               <StyledProjectName>Distractic</StyledProjectName>
               <Card.Meta>
@@ -133,7 +138,7 @@ class ProjectCarousel extends Component {
         </StyledCardWrapper>
         <StyledCardWrapper>
           <Card>
-            <Image src='https://devlinda.com/assets/img/projects/safeme.png' wrapped ui={false}/>
+            <Image src={safeme} wrapped ui={false}/>
             <Card.Content>
               <StyledProjectName>SafeMe</StyledProjectName>
               <Card.Meta>
@@ -156,7 +161,7 @@ class ProjectCarousel extends Component {
         </StyledCardWrapper>
         <StyledCardWrapper>
           <Card>
-            <Image src='https://devlinda.com/assets/img/projects/groshare.png' wrapped ui={false}/>
+            <Image src={groshare} wrapped ui={false}/>
             <Card.Content>
               <StyledProjectName>GroShare</StyledProjectName>
               <Card.Meta>
