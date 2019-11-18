@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import {Button, Card, Image, Label, LabelGroup} from "semantic-ui-react";
+import {Card, Image, Label, LabelGroup} from "semantic-ui-react";
 import {StyledArrows, StyledCardWrapper, StyledProjectName} from "../../sections/Projects/styles";
 import budgetbuddy from '../../res/images/budgetbuddy.png';
 import wave from '../../res/images/wave.png';
@@ -9,7 +9,7 @@ import groshare from '../../res/images/groshare.png';
 import safeme from '../../res/images/safeme.png';
 import distractic from '../../res/images/distractic.png'
 import {StyledLinkButton} from "./styles";
-import {StyledSocialMediaButtonsInfo} from "../InfoCard/styles";
+import strings from "../../res/strings";
 
 class ProjectCarousel extends Component {
   constructor(props) {
@@ -68,14 +68,13 @@ class ProjectCarousel extends Component {
             <Image src={wave} wrapped ui={false}/>
             <Card.Content>
               <StyledProjectName>
-                Wave
+                {strings.projects.wave.title}
               </StyledProjectName>
               <Card.Meta>
-                <span>Sep. 2018</span>
+                <span>{strings.projects.wave.date}</span>
               </Card.Meta>
               <Card.Description>
-                A suite of applications that uses sound wave technology to provide cross-platform file and data
-                transfer.
+                {strings.projects.wave.description}
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
@@ -119,13 +118,12 @@ class ProjectCarousel extends Component {
           <Card>
             <Image src={budgetbuddy} wrapped ui={false}/>
             <Card.Content>
-              <StyledProjectName>BudgetBuddy</StyledProjectName>
+              <StyledProjectName>{strings.projects.budgetbuddy.title}</StyledProjectName>
               <Card.Meta>
-                <span>Sep. 2018</span>
+                <span>{strings.projects.budgetbuddy.date}</span>
               </Card.Meta>
               <Card.Description>
-                An Android application that recommends shopping alternatives to help one to achieve their desired
-                budgets.
+                {strings.projects.budgetbuddy.description}
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
@@ -154,12 +152,12 @@ class ProjectCarousel extends Component {
           <Card>
             <Image src={distractic} wrapped ui={false}/>
             <Card.Content>
-              <StyledProjectName>Distractic</StyledProjectName>
+              <StyledProjectName>{strings.projects.distractic.title}</StyledProjectName>
               <Card.Meta>
-                <span>May 2018</span>
+                <span>{strings.projects.distractic.date}</span>
               </Card.Meta>
               <Card.Description>
-                An Android application that reduces road accidents caused by distracted driving.
+                {strings.projects.distractic.description}
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
@@ -188,12 +186,12 @@ class ProjectCarousel extends Component {
           <Card>
             <Image src={safeme} wrapped ui={false}/>
             <Card.Content>
-              <StyledProjectName>SafeMe</StyledProjectName>
+              <StyledProjectName>{strings.projects.safeme.title}</StyledProjectName>
               <Card.Meta>
-                <span>May 2018</span>
+                <span>{strings.projects.safeme.date}</span>
               </Card.Meta>
               <Card.Description>
-                A web application that provides women a better and safer way to plan their trips at night.
+                {strings.projects.safeme.description}
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
@@ -223,12 +221,12 @@ class ProjectCarousel extends Component {
           <Card>
             <Image src={groshare} wrapped ui={false}/>
             <Card.Content>
-              <StyledProjectName>GroShare</StyledProjectName>
+              <StyledProjectName>{strings.projects.groshare.title}</StyledProjectName>
               <Card.Meta>
-                <span>Mar. 2018</span>
+                <span>{strings.projects.groshare.date}</span>
               </Card.Meta>
               <Card.Description>
-                A web application that provides a sustainable and communal grocery shopping experience.
+                {strings.projects.groshare.description}
               </Card.Description>
             </Card.Content>
             <Card.Content extra>

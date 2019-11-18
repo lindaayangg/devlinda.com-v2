@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {StyledNavbar, StyledNavbarItem, StyledSpecialMenuItem} from "./styles";
 import strings from '../../res/strings';
 import {Link} from "react-scroll";
-import {StyledHeaderLabel} from "../StickySidebar/styles";
 
 class Navbar extends Component {
   render() {

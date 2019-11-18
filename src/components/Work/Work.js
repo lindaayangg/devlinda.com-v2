@@ -2,12 +2,15 @@ import React, {Component} from 'react';
 import {Card, Divider, Grid, Label, Responsive, Segment} from "semantic-ui-react";
 import {
   StyledCard,
-  StyledCircleIcon, StyledCompanyName,
+  StyledCircleIcon,
+  StyledCompanyName,
   StyledCompanyWrapperLeft,
   StyledCompanyWrapperRight,
   StyledImage,
-  StyledLeftColumn, StyledLeftColumnReversed,
-  StyledSegment, StyledTitleName,
+  StyledLeftColumn,
+  StyledLeftColumnReversed,
+  StyledSegment,
+  StyledTitleName,
   StyledToolsLabelGroup,
   StyledWorkExperienceWrapper
 } from "./styles";
@@ -15,6 +18,7 @@ import skip from '../../res/images/skip.jpg';
 import formlabs from '../../res/images/formlabs.png';
 import sydneystone from '../../res/images/sydneystone.jpg';
 import shoppers from '../../res/images/shoppers.png';
+import strings from "../../res/strings";
 
 class Work extends Component {
   render() {
@@ -26,16 +30,16 @@ class Work extends Component {
               <StyledImage src={skip}
                            circular/>
               <StyledCompanyWrapperLeft>
-                <StyledCompanyName>SkipTheDishes</StyledCompanyName>
-                <div>Winnipeg, Manitoba</div>
+                <StyledCompanyName>{strings.work.skip.company}</StyledCompanyName>
+                <div>{strings.work.skip.location}</div>
               </StyledCompanyWrapperLeft>
             </StyledLeftColumn>
             <Grid.Column mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
-                  <StyledTitleName>Junior Software Developer | Internship</StyledTitleName>
-                  <Card.Meta>Sep. 2019 - Present</Card.Meta>
-                  <Card.Description>Placeholder for task</Card.Description>
+                  <StyledTitleName>{strings.work.skip.position}</StyledTitleName>
+                  <Card.Meta>{strings.work.skip.date}</Card.Meta>
+                  <Card.Description>{strings.work.skip.tasks}</Card.Description>
                   <StyledToolsLabelGroup>
                     <Label>Java 8</Label>
                     <Label>ReactJS</Label>
@@ -75,18 +79,17 @@ class Work extends Component {
                 src={formlabs}
                 circular/>
               <StyledCompanyWrapperRight>
-                <StyledCompanyName>Formlabs</StyledCompanyName>
-                <div>Boston, Massachusetts</div>
+                <StyledCompanyName>{strings.work.formlabs.company}</StyledCompanyName>
+                <div>{strings.work.formlabs.location}</div>
               </StyledCompanyWrapperRight>
             </StyledLeftColumnReversed>
-            <Grid.Column verticalAlign='middle' mobile={16} tablet={11}  computer={8}>
+            <Grid.Column verticalAlign='middle' mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
-                  <StyledTitleName>Web Developer | Internship</StyledTitleName>
-                  <Card.Meta>Jan. 2019 - Apr. 2019</Card.Meta>
+                  <StyledTitleName>{strings.work.formlabs.position}</StyledTitleName>
+                  <Card.Meta>{strings.work.formlabs.date}</Card.Meta>
                   <Card.Description>
-                    Involved in building the brand new static customer facing website www.formlabs.com with focus on
-                    performance and usability.
+                    {strings.work.formlabs.tasks}
                   </Card.Description>
                   <StyledToolsLabelGroup>
                     <Label>ReactJS</Label>
@@ -117,17 +120,17 @@ class Work extends Component {
               <StyledImage src={sydneystone}
                            circular/>
               <StyledCompanyWrapperLeft>
-                <StyledCompanyName>Sydney Stone</StyledCompanyName>
-                <div>Mississauga, Ontario</div>
+                <StyledCompanyName>{strings.work.sydneystone.company}</StyledCompanyName>
+                <div>{strings.work.sydneystone.location}</div>
               </StyledCompanyWrapperLeft>
             </StyledLeftColumn>
             <Grid.Column mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
-                  <StyledTitleName>Ecommerce Web Developer | Internship</StyledTitleName>
-                  <Card.Meta>Jun. 2018 - Aug. 2018</Card.Meta>
+                  <StyledTitleName>{strings.work.sydneystone.position}</StyledTitleName>
+                  <Card.Meta>{strings.work.sydneystone.date}</Card.Meta>
                   <Card.Description>
-                    Responsible for developing a front-end web application on Magento Ecommerce platform.
+                    {strings.work.sydneystone.tasks}
                   </Card.Description>
                   <StyledToolsLabelGroup>
                     <Label>HTML | CSS</Label>
@@ -151,17 +154,17 @@ class Work extends Component {
             <StyledLeftColumnReversed mobile={16} tablet={5} computer={8} verticalAlign='middle'>
               <StyledImage src={shoppers} circular/>
               <StyledCompanyWrapperRight>
-                <StyledCompanyName>Shoppers Drug Mart</StyledCompanyName>
-                <div>Scarborough, Ontario</div>
+                <StyledCompanyName>{strings.work.shoppers.company}</StyledCompanyName>
+                <div>{strings.work.shoppers.location}</div>
               </StyledCompanyWrapperRight>
             </StyledLeftColumnReversed>
             <Grid.Column verticalAlign='middle' mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
-                  <StyledTitleName>Pharmacy Technician</StyledTitleName>
-                  <Card.Meta>Oct. 2015 - Aug. 2017</Card.Meta>
+                  <StyledTitleName>{strings.work.shoppers.position}</StyledTitleName>
+                  <Card.Meta>{strings.work.shoppers.date}</Card.Meta>
                   <Card.Description>
-                    Provided professional healthcare and customer service.
+                    {strings.work.shoppers.tasks}
                   </Card.Description>
                   <StyledToolsLabelGroup>
                     <Label>HealthWatch</Label>

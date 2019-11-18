@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {StyledDegree, StyledSchoolName, StyledUniversityIcon, StyledYear} from "./styles";
 import {Header, HeaderContent} from "semantic-ui-react";
+import strings from "../../res/strings";
 
 class Education extends Component {
   render() {
@@ -9,13 +10,17 @@ class Education extends Component {
         <Header as='h1'>
           <StyledUniversityIcon name='graduation'/>
           <StyledSchoolName>
-            UNIVERSITY OF WATERLOO
-            <StyledYear>2017 - Present</StyledYear>
+            {strings.education.school}
+            <StyledYear>{strings.education.date}</StyledYear>
           </StyledSchoolName>
         </Header>
         <StyledDegree>
-          <HeaderContent>Candidate for Bachelor of Mathematics</HeaderContent>
-          <HeaderContent>Computational Mathematics Major</HeaderContent>
+          <HeaderContent>
+            {strings.education.degree}
+          </HeaderContent>
+          <HeaderContent>
+            {strings.education.major}
+          </HeaderContent>
         </StyledDegree>
       </div>
     )
