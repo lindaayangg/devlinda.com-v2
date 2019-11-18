@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Icon, Radio} from "semantic-ui-react";
 import {
+  StyledCopyRightWrapper,
   StyledDarkModeContainer,
   StyledDarkModeContent,
   StyledDarkModeHeaderContainer,
@@ -122,6 +123,9 @@ class StickySidebar extends Component {
           </StyledDarkModeHeaderContainer>
           <Radio toggle/>
         </StyledDarkModeContainer>
+        <StyledCopyRightWrapper>
+          {strings.copyright}
+        </StyledCopyRightWrapper>
       </div>
     )
   }

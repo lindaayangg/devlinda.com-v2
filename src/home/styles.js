@@ -8,9 +8,6 @@ export const StyledMenu = styled(Menu)`
     background-color: #DB1793 !important;
     border-right: none;
     text-align: center;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-evenly !important;
   }
 `;
 

@@ -91,7 +91,7 @@ export const StyledDarkModeContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: -30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -110,5 +110,12 @@ export const StyledDarkModeHeaderContainer = styled(Header)`
 export const StyledDarkModeContent = styled(HeaderContent)`
   &&& {
     margin-left: 5px;
+  }
+`;
+
+export const StyledCopyRightWrapper = styled.div`
+  &&& {
+    padding: 10px;
+    color: #fff;
   }
 `;

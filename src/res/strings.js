@@ -41,7 +41,8 @@ const strings = {
     experience: 'EXPERIENCE',
     projects: 'PROJECTS',
     resume: 'RESUME'
-  }
+  },
+  copyright: '2019 © Linda Yang - All rights Reserved.'
 };
 
 export default strings;

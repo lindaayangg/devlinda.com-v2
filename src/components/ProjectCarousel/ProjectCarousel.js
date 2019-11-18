@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import {Card, Image, Label, LabelGroup} from "semantic-ui-react";
+import {Button, Card, Image, Label, LabelGroup} from "semantic-ui-react";
 import {StyledArrows, StyledCardWrapper, StyledProjectName} from "../../sections/Projects/styles";
 import budgetbuddy from '../../res/images/budgetbuddy.png';
 import wave from '../../res/images/wave.png';
 import groshare from '../../res/images/groshare.png';
 import safeme from '../../res/images/safeme.png';
 import distractic from '../../res/images/distractic.png'
+import {StyledLinkButton} from "./styles";
+import {StyledSocialMediaButtonsInfo} from "../InfoCard/styles";
 
 class ProjectCarousel extends Component {
   constructor(props) {
@@ -77,6 +79,28 @@ class ProjectCarousel extends Component {
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
+              <StyledLinkButton
+                icon='github alternate'
+                href="https://github.com/lindaayangg/Wave-Web"
+                target="_blank"
+                circular/>
+              <StyledLinkButton
+                icon='apple'
+                href=""
+                target="_blank"
+                circular/>
+              <StyledLinkButton
+                icon='android'
+                href=""
+                target="_blank"
+                circular/>
+              <StyledLinkButton
+                icon='window maximize outline'
+                href="https://waveitover.com/"
+                target="_blank"
+                circular/>
+            </Card.Content>
+            <Card.Content extra>
               <LabelGroup>
                 <Label>Flutter</Label>
                 <Label>Chirp API</Label>
@@ -105,6 +129,18 @@ class ProjectCarousel extends Component {
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
+              <StyledLinkButton
+                icon='github alternate'
+                href="https://github.com/lindaayangg/BudgetBuddy"
+                target="_blank"
+                circular/>
+              <StyledLinkButton
+                icon='android'
+                href=""
+                target="_blank"
+                circular/>
+            </Card.Content>
+            <Card.Content extra>
               <LabelGroup>
                 <Label>Java</Label>
                 <Label>TD Da Vinci API</Label>
@@ -125,6 +161,18 @@ class ProjectCarousel extends Component {
               <Card.Description>
                 An Android application that reduces road accidents caused by distracted driving.
               </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <StyledLinkButton
+                icon='github alternate'
+                href="https://github.com/lindaayangg/Distractic"
+                target="_blank"
+                circular/>
+              <StyledLinkButton
+                icon='android'
+                href=""
+                target="_blank"
+                circular/>
             </Card.Content>
             <Card.Content extra>
               <LabelGroup>
@@ -149,6 +197,18 @@ class ProjectCarousel extends Component {
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
+              <StyledLinkButton
+                icon='github alternate'
+                href="https://github.com/lindaayangg/SafeMe"
+                target="_blank"
+                circular/>
+              <StyledLinkButton
+                icon='window maximize outline'
+                href=""
+                target="_blank"
+                circular/>
+            </Card.Content>
+            <Card.Content extra>
               <LabelGroup>
                 <Label>MongoDB</Label>
                 <Label>NodeJS</Label>
@@ -170,6 +230,18 @@ class ProjectCarousel extends Component {
               <Card.Description>
                 A web application that provides a sustainable and communal grocery shopping experience.
               </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <StyledLinkButton
+                icon='github alternate'
+                href="https://github.com/davidhqr/GroShare"
+                target="_blank"
+                circular/>
+              <StyledLinkButton
+                icon='window maximize outline'
+                href=""
+                target="_blank"
+                circular/>
             </Card.Content>
             <Card.Content extra>
               <LabelGroup>
