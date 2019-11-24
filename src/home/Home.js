@@ -35,6 +35,7 @@ class Home extends Component {
     return (
       <StyledLandingWrapper>
         <Particles
+          height='100vh'
           params={{
             "particles": {
               "number": {
@@ -86,6 +87,7 @@ class Home extends Component {
               }
             }
           }}
+          // particles
           // params={{
           //   "particles": {
           //     "number": {

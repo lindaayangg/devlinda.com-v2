@@ -41,6 +41,12 @@ export const StyledHeader = styled(Header)`
   &&& {
     color: #fff;
     font-size: 35px;
+    @media (max-width: 450px) {
+      font-size: 30px;
+    }
+    @media (max-width: 400px) {
+      font-size: 25px;
+    }
   }
 `;
 
