@@ -111,7 +111,17 @@ const strings = {
       tasks: 'Provided professional healthcare and customer service.',
     },
   },
-  copyright: '2019 © Linda Yang - All rights Reserved.'
+  copyright: '2019 © Linda Yang - All rights Reserved.',
+  landing: {
+    whatIAm: 'I am a ',
+    explore: 'Explore',
+    backend: 'backend developer',
+    frontend: 'frontend developer',
+    web: 'web developer',
+    business: 'business analyst',
+    software: 'software engineer',
+    pharmacy: 'pharmacy technician',
+  },
 };
 
 export default strings;
