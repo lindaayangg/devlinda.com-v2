@@ -9,6 +9,9 @@ export const StyledProjectContainer = styled.div`
     @media (max-width: 1183px) {
       width: 90%;
     }
+    @media (max-width: 450px) {
+      width: 100%;
+    }
   }
 `;
 
@@ -27,6 +30,9 @@ export const StyledArrows = styled(Icon)`
 export const StyledCardWrapper = styled.div`
   &&& {
     padding: 10px 0;
+    @media (max-width: 350px) {
+      width: 230px;
+    }
   }
 `;
 

@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import StickySidebar from "../components/StickySidebar/StickySidebar";
-import About from "../sections/About/About";
-import Knowledge from "../sections/Knowledge/Knowledge";
-import Experience from "../sections/Experience/Experience";
-import Projects from "../sections/Projects/Project";
+import StickySidebar from "../../components/StickySidebar/StickySidebar";
+import About from "../About/About";
+import Knowledge from "../Knowledge/Knowledge";
+import Experience from "../Experience/Experience";
+import Projects from "../Projects/Project";
 import {Responsive} from "semantic-ui-react";
-import Navbar from "../components/Narbar/Navbar";
-import CopyRight from "../sections/CopyRight/CopyRight";
+import Navbar from "../../components/Narbar/Navbar";
+import CopyRight from "../CopyRight/CopyRight";
 import Particles from "react-particles-js";
-import profile from "../res/images/profile.jpg";
-import strings from "../res/strings";
+import profile from "../../res/images/profile.jpg";
+import strings from "../../res/strings";
 import Typical from "react-typical";
 import {
   StyledArticle,
@@ -109,6 +109,9 @@ class Home extends Component {
         />
         <StyledContentWrapper>
           <StyledImage src={profile}/>
+          <StyledHeader>
+            {strings.landing.intro}
+          </StyledHeader>
           <StyledHeader>
             {strings.landing.whatIAm}
             <Typical

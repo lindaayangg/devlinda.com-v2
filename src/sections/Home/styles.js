@@ -40,6 +40,7 @@ export const StyledImage = styled(Image)`
 export const StyledHeader = styled(Header)`
   &&& {
     color: #fff;
+    margin-top: 15px;
     font-size: 35px;
     @media (max-width: 450px) {
       font-size: 30px;

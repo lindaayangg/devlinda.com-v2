@@ -113,6 +113,7 @@ const strings = {
   },
   copyright: '2019 © Linda Yang - All rights Reserved.',
   landing: {
+    intro: 'Hi, I am Linda. ',
     whatIAm: 'I am a ',
     explore: 'Explore',
     backend: 'backend developer',

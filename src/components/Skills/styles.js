@@ -11,6 +11,9 @@ export const StyledGridContainer = styled(Grid)`
       margin-left: 0px !important;
       padding: 0px !important
     }
+    @media (max-width: 450px) {
+      width: 98% !important; 
+    }
   }
 `;
 
