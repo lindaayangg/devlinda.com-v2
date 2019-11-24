@@ -1,11 +1,15 @@
 import styled from "styled-components";
-import {Grid, Icon, Segment} from "semantic-ui-react";
+import {Grid, Icon} from "semantic-ui-react";
+
+export const StyledSkillsWrapperContainer = styled.div`
+  &&& {
+    width: 95%;
+  }
+`;
 
 export const StyledGridContainer = styled(Grid)`
   &&& {
     margin-top: 20px !important;
-    margin-left: 10px !important;
-    padding: 20px !important;
     @media (max-width: 859px) {
       margin-top: 0px !important;
       margin-left: 0px !important;
@@ -17,9 +21,9 @@ export const StyledGridContainer = styled(Grid)`
   }
 `;
 
-export const StyledGridContainerTablet = styled(Grid)`
-  &&&{
-  
+export const StyledSkillsTitleWrapper = styled.div`
+  &&& {
+    padding: 5px 10px 0 10px;
   }
 `;
 
@@ -27,7 +31,8 @@ export const StyledSpan = styled.span`
   &&& {
     font-size: 18px;
     font-weight: 700;
-    color: #E03997;
+    color: #54B689;
+    margin-left: 5px;
   }
 `;
 
@@ -37,14 +42,14 @@ export const StyledSkillsWrapper = styled(Grid)`
   }
 `;
 
-export const StyledSegmentBox = styled(Segment)`
+export const StyledCheckIcon = styled(Icon)`
   &&& {
-    width: 350px;
+    color: #54B689;
   }
 `;
 
-export const StyledCheckIcon = styled(Icon)`
+export const StyledSkillsIcon = styled(Icon)`
   &&& {
-    color: #DB1793;
+    color: #54B689;
   }
 `;

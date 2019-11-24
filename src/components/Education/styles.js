@@ -4,13 +4,13 @@ import HeaderSubHeader from "semantic-ui-react/dist/commonjs/elements/Header/Hea
 
 export const StyledUniversityIcon = styled(Icon)`
   &&& {
-    color: #DB1793;
+    color: #54B689;
   }
 `;
 
 export const StyledSchoolName = styled(HeaderContent)`
   &&& {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 900;
   }
 `;
@@ -25,9 +25,9 @@ export const StyledYear = styled(HeaderSubHeader)`
 
 export const StyledDegree = styled(HeaderContent)`
   &&& {
-    border-left: #DB1793;
-    border-left-style: dotted;
-    border-left-width: 4px;
+    border-left: #54B689;
+    border-left-style: solid;
+    border-left-width: 2px;
     padding-left: 35px;
     font-size: 15px;
     margin-left: 25px;

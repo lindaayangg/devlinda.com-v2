@@ -7,13 +7,13 @@ export const StyledMenu = styled(Menu)`
     width: 280px !important;
     border-right: none;
     text-align: center;
-    background-color: ${props => props.darkMode ? '#000 !important' : '#DB1793 !important'}
+    background-color: ${props => props.darkMode ? '#000 !important' : '#54B689 !important'}
   }
 `;
 
-export const StyledMenuItem = styled(MenuItem)`
+export const StyledNameHeader = styled(MenuItem)`
   &&& {
-    font-size:32px;
+    font-size:25px;
     font-weight: 900 !important;
     color: #fff !important; 
   }
@@ -24,8 +24,8 @@ export const StyledImageContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -10px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 `;
 
@@ -38,8 +38,12 @@ export const StyledImage = styled(Image)`
 export const StyledSocialMediaButtons = styled(Button)`
   &&& {
     background-color: #fff !important;
-    color: #DB1793;
-    margin: 0px 3px;
+    color: #54B689;
+    margin: 0px 5px;
+    &:hover {
+      color: #40976f;
+      background-color: rgba(255,255,255,0.8);
+    }
   }
 `;
 
@@ -75,7 +79,7 @@ export const StyledHeaderLabel = styled(HeaderContent)`
     color: #fff;
     cursor: pointer;
     &:hover {
-      color: rgba(0,0,0,0.8);
+      color: ${props => props.darkMode ? '#54B689 !important' : 'rgba(0,0,0,0.5) !important'}
     }
   }
 `;

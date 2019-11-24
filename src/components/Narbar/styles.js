@@ -6,7 +6,7 @@ export const StyledNavbar = styled(Menu)`
     border: none;
     box-shadow: none;
     height: 55px;
-    background-color: #DB1793;
+    background-color: #54B689;
     border-radius: 0;
     justify-content: flex-end;
     padding: 20px;

@@ -3,9 +3,10 @@ import {Grid, Header} from "semantic-ui-react";
 
 export const StyledContainer = styled.div`
   &&& {
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    @media (max-width: 450px) {
+      padding: 5px;
+    }
   }
 `;
 
@@ -13,15 +14,15 @@ export const StyledHeaderWrapper = styled.div`
   &&& {
     width: fit-content;
     border-bottom-style: solid;
-    border-bottom-color: #DB1793;
+    border-bottom-color: #54B689;
     padding-bottom: 5px;
   }
 `;
 
 export const StyledHeader = styled(Header)`
   &&& {
-    font-size: 30px;
-    color: #DB1793;
+    font-size: 25px;
+    color: #54B689;
   }
 `;
 

@@ -3,9 +3,13 @@ import {Button, Header, Image} from "semantic-ui-react";
 
 export const StyledArticle = styled.div`
   &&& {
-    margin-left: 300px;
+    margin-left: 280px;
+    padding: 30px 60px 0 60px;
     @media (max-width: 1183px) {
-      margin-left: 20px;
+      margin-left: 0px;
+    }
+    @media (max-width: 450px) {
+      padding: 20px 5px;
     }
   }
 `;
@@ -53,7 +57,7 @@ export const StyledHeader = styled(Header)`
 
 export const StyledEnterButton = styled(Button)`
   &&& {
-    background-color: #DB1793 !important;
+    background-color: #54B689 !important;
     color: #fff;
     width: 100px;
     margin-top: 10px;

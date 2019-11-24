@@ -8,12 +8,11 @@ import {
   StyledDivider,
   StyledHeaderContainer,
   StyledHeaderLabel,
-  StyledHireMeButton,
   StyledImage,
   StyledImageContainer,
   StyledLabelIcon,
   StyledMenu,
-  StyledMenuItem,
+  StyledNameHeader,
   StyledNavList,
   StyledSocialMediaButtons
 } from "./styles";
@@ -37,21 +36,21 @@ class StickySidebar extends Component {
       <StyledMenu
         darkMode={this.state.darkMode}
         className='vertical left fixed'>
-        <StyledMenuItem>
+        <StyledNameHeader>
           {strings.sidebar.name}
-        </StyledMenuItem>
+        </StyledNameHeader>
         <StyledImageContainer>
           <StyledImage src={sidebarprofile} circular/>
         </StyledImageContainer>
-        <StyledSocialMediaButtons circular icon='linkedin' size='large' href="https://www.linkedin.com/in/lindaayangg/"
+        <StyledSocialMediaButtons circular icon='linkedin' size='medium' href="https://www.linkedin.com/in/lindaayangg/"
                                   target="_blank"/>
-        <StyledSocialMediaButtons circular icon='github alternate' size='large' href="https://github.com/lindaayangg"
+        <StyledSocialMediaButtons circular icon='github alternate' size='medium' href="https://github.com/lindaayangg"
                                   target="_blank"/>
-        <StyledSocialMediaButtons circular icon='mail' size='large' href='mailto:xiaoling.yang@uwaterloo.ca'/>
-        <StyledSocialMediaButtons circular icon='google play' size='large'
+        <StyledSocialMediaButtons circular icon='mail' size='medium' href='mailto:xiaoling.yang@uwaterloo.ca'/>
+        <StyledSocialMediaButtons circular icon='google play' size='medium'
                                   href='https://play.google.com/store/apps/details?id=com.waveitover.waveit&rdid=com.waveitover.waveit'
                                   target="_blank"/>
-        <StyledSocialMediaButtons circular icon='facebook' size='large' href='https://www.facebook.com/lindayanggg'
+        <StyledSocialMediaButtons circular icon='facebook' size='medium' href='https://www.facebook.com/lindayanggg'
                                   target="_blank"/>
         <StyledDivider/>
         <StyledNavList>
@@ -59,6 +58,7 @@ class StickySidebar extends Component {
             <StyledHeaderContainer as='h5'>
               <StyledLabelIcon name='user'/>
               <StyledHeaderLabel
+                darkMode={this.state.darkMode}
                 as={Link}
                 to="about"
                 spy={true}
@@ -68,8 +68,9 @@ class StickySidebar extends Component {
               </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
-              <StyledLabelIcon name='graduation'/>
+              <StyledLabelIcon name='pencil alternate'/>
               <StyledHeaderLabel
+                darkMode={this.state.darkMode}
                 as={Link}
                 to="knowledge"
                 spy={true}
@@ -81,6 +82,7 @@ class StickySidebar extends Component {
             <StyledHeaderContainer as='h5'>
               <StyledLabelIcon name='briefcase'/>
               <StyledHeaderLabel
+                darkMode={this.state.darkMode}
                 as={Link}
                 to="experience"
                 spy={true}
@@ -92,6 +94,7 @@ class StickySidebar extends Component {
             <StyledHeaderContainer as='h5'>
               <StyledLabelIcon name='lightbulb'/>
               <StyledHeaderLabel
+                darkMode={this.state.darkMode}
                 as={Link}
                 to="projects"
                 spy={true}
@@ -103,6 +106,7 @@ class StickySidebar extends Component {
             <StyledHeaderContainer as='h5'>
               <StyledLabelIcon name='file text'/>
               <StyledHeaderLabel
+                darkMode={this.state.darkMode}
                 href="https://devlinda.com/assets/Resume_Linda_Yang.pdf"
                 target='_blank'
               >
@@ -112,6 +116,7 @@ class StickySidebar extends Component {
             <StyledHeaderContainer as='h5'>
               <StyledLabelIcon name='thumbs up'/>
               <StyledHeaderLabel
+                darkMode={this.state.darkMode}
                 as={Link}
                 to="fun"
                 spy={true}
@@ -122,10 +127,6 @@ class StickySidebar extends Component {
             </StyledHeaderContainer>
           </div>
         </StyledNavList>
-        <StyledHireMeButton href='mailto:xiaoling.yang@uwaterloo.ca'>
-          <Icon name='send'/>
-          {strings.sidebar.hire}
-        </StyledHireMeButton>
         <StyledDivider/>
         <StyledDarkModeContainer>
           <StyledDarkModeHeaderContainer as='h6'>

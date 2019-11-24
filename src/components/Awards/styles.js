@@ -9,21 +9,21 @@ export const StyledAchievementsWrapper = styled.div`
 
 export const StyledStarIcon = styled(Icon)`
   &&& {
-    color: #DB1793;
+    color: #54B689;
   }
 `;
 
 export const StyledAchievementsHeader = styled(HeaderContent)`
   &&& {
-    font-size: 20px;
+    font-size: 17px;
   }
 `;
 
 export const StyledAwards = styled(HeaderContent)`
   &&& {
-    border-left: #DB1793;
-    border-left-style: dotted;
-    border-left-width: 4px;
+    border-left: #54B689;
+    border-left-style: solid;
+    border-left-width: 2px;
     padding-left: 35px;
     font-size: 15px;
     margin-left: 25px;

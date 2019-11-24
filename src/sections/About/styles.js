@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import {Icon} from "semantic-ui-react";
+import {GridColumn, Header, HeaderSubheader, Icon} from "semantic-ui-react";
 
 export const StyledAboutContainer = styled.div`
   &&& {
-    padding: 20px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 30px;
     @media (max-width: 1183px) {
       margin-top: 65px;
@@ -14,31 +13,58 @@ export const StyledAboutContainer = styled.div`
 
 export const StyledIntro = styled.div`
   &&& {
-    font-size: 17px;
-    line-height: 1.8rem;
-    color: #000000;
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: #4F4F4F;
+    margin-top: 20px;
   }
 `;
 
 export const StyledIcon = styled(Icon)`
   &&& {
-    color: #DB1793;
-  }
-`;
-
-export const StyledEmailWrapper = styled.div`
-  &&& {
-    margin-top: 30px;
-    font-size: 15px;
-    line-height: 1.5rem;
+    color: #54B689;
   }
 `;
 
 export const StyledLocationWrapper = styled.div`
   &&& {
-    margin-top: 5px;
+    margin-top: 25px;
     font-size: 15px;
     line-height: 1.5rem;
+    color: #4F4F4F;
+  }
+`;
+
+export const StyledEducationWrapper = styled.div`
+  &&& {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: #4F4F4F;
+  }
+`;
+
+export const StyledInfoGridWrapper = styled(GridColumn)`
+  &&& {
+    @media (max-width: 450px) {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+  }
+`;
+
+export const StyledNameHeader = styled(Header)`
+  &&& {
+    font-size: 35px;
+  }
+`;
+
+export const StyledSubHeaderRole = styled(HeaderSubheader)`
+  &&& {
+    color: #4f4f4f;
+    font-size: 20px;
+    font-weight: 100;
   }
 `;
 

@@ -118,9 +118,7 @@ class Home extends Component {
               steps={[
                 strings.landing.backend, 1500,
                 strings.landing.frontend, 1500,
-                strings.landing.web, 1500,
-                strings.landing.business, 1500,
-                strings.landing.software, 1500,
+                strings.landing.hackathon, 1500,
                 strings.landing.pharmacy, 1500
               ]}
               loop={Infinity}

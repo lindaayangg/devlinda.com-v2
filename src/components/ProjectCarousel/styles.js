@@ -3,10 +3,10 @@ import {Button} from "semantic-ui-react";
 
 export const StyledLinkButton = styled(Button)`
   &&& {
-    background-color: #DB1793;
+    background-color: #54B689;
     color: #fff;
     &:hover {
-      background-color: #DB1793;
+      background-color: #54B689;
     }
   }
 `;

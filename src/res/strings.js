@@ -1,37 +1,29 @@
 const strings = {
+  dot: ' • ',
+  divider: ' || ',
   sidebar: {
-    name: 'LINDA YANG',
+    name: 'Linda Yang',
     about: 'About Me',
-    skills: 'Skills & Education',
+    skills: 'Skills',
     experience: 'Experience',
     projects: 'Projects',
     resume: 'Resume',
     fun: 'Fun Facts & Stuff',
-    hire: 'Hire Me',
     darkMode: 'Dark Mode',
   },
-  infoCard: {
+  intro: {
     name: 'Linda Yang',
     title: 'Software Developer',
   },
   description: {
-    name: "Hey there! My name is Linda and my friends call me Lindor. " +
-      "I am a third year Computational Mathematics student at the University of Waterloo.",
-    story: "I am a passionate software developer, but if it was 2 years ago and you asked me what I wanted to do in the " +
-      "future, I would've said \"anything, but computers\". I was a pre-med student in my first year of university, but I was " +
-      "fascinated by a simple button that my friend wrote in one line of HTML and CSS, hence here I am today.",
-    work: "I currently specialize in web development with ReactJS and backend development with Java and Python. " +
-      "I am always open to internship opportunities and new challenges.",
-    hobby: "When I am not sitting in front of my laptop, I enjoy photography, playing the piano, cello, working out and skating!"
+    intro: "I am a third year Computational Mathematics student at the University of Waterloo. I am a hackathon enthusiast who loves to explore new technologies. I am always open to internship opportunities and new challenges.",
+    hobby: "During my free time, I enjoy photography, playing the piano & cello, working out and figure skating."
   },
   skills: {
     frontend: "Frontend",
     backend: "Backend",
-    others: "Others",
   },
-  phone: "416-990-8432",
-  email: "xiaoling.yang@uwaterloo.ca",
-  location: "Toronto, ON • Waterloo, ON • Boston, MA • Winnipeg, MB",
+  location: "Toronto, ON // Waterloo, ON // Boston, MA // Winnipeg, MB",
   navbar: {
     about: 'ABOUT',
     skills: 'SKILLS',
@@ -49,7 +41,7 @@ const strings = {
     infection: 'Infection Control',
   },
   education: {
-    school: 'UNIVERSITY OF WATERLOO',
+    school: 'University of Waterloo',
     date: '2017 - Present',
     degree: 'Candidate for Bachelor of Mathematics',
     major: 'Computational Mathematics Major',
@@ -118,9 +110,7 @@ const strings = {
     explore: 'Explore',
     backend: 'backend developer',
     frontend: 'frontend developer',
-    web: 'web developer',
-    business: 'business analyst',
-    software: 'software engineer',
+    hackathon: 'hackathon enthusiast',
     pharmacy: 'pharmacy technician',
   },
 };

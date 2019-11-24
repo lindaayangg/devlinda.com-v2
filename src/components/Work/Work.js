@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Card, Divider, Grid, Label, Responsive, Segment} from "semantic-ui-react";
 import {
-  StyledCard,
+  StyledCard, StyledCardWrapper,
   StyledCircleIcon,
   StyledCompanyName,
   StyledCompanyWrapperLeft,
@@ -34,7 +34,7 @@ class Work extends Component {
                 <div>{strings.work.skip.location}</div>
               </StyledCompanyWrapperLeft>
             </StyledLeftColumn>
-            <Grid.Column mobile={16} tablet={11} computer={8}>
+            <StyledCardWrapper mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
                   <StyledTitleName>{strings.work.skip.position}</StyledTitleName>
@@ -55,17 +55,13 @@ class Work extends Component {
                     <Label>ElasticSearch</Label>
                     <Label>Graphite</Label>
                     <Label>Quartz</Label>
-                    <Label>AutoValue</Label>
                     <Label>HTML | CSS</Label>
                     <Label>Git</Label>
                     <Label>Jenkins</Label>
-                    <Label>Papertrail</Label>
-                    <Label>Jest & Enzyme</Label>
-                    <Label>Flyway</Label>
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
-            </Grid.Column>
+            </StyledCardWrapper>
           </Grid>
           <Responsive {...Responsive.onlyComputer}>
             <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
@@ -83,7 +79,7 @@ class Work extends Component {
                 <div>{strings.work.formlabs.location}</div>
               </StyledCompanyWrapperRight>
             </StyledLeftColumnReversed>
-            <Grid.Column verticalAlign='middle' mobile={16} tablet={11} computer={8}>
+            <StyledCardWrapper verticalAlign='middle' mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
                   <StyledTitleName>{strings.work.formlabs.position}</StyledTitleName>
@@ -107,7 +103,7 @@ class Work extends Component {
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
-            </Grid.Column>
+            </StyledCardWrapper>
           </Grid>
           <Responsive {...Responsive.onlyComputer}>
             <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
@@ -124,7 +120,7 @@ class Work extends Component {
                 <div>{strings.work.sydneystone.location}</div>
               </StyledCompanyWrapperLeft>
             </StyledLeftColumn>
-            <Grid.Column mobile={16} tablet={11} computer={8}>
+            <StyledCardWrapper mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
                   <StyledTitleName>{strings.work.sydneystone.position}</StyledTitleName>
@@ -142,7 +138,7 @@ class Work extends Component {
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
-            </Grid.Column>
+            </StyledCardWrapper>
           </Grid>
           <Responsive {...Responsive.onlyComputer}>
             <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>
@@ -158,7 +154,7 @@ class Work extends Component {
                 <div>{strings.work.shoppers.location}</div>
               </StyledCompanyWrapperRight>
             </StyledLeftColumnReversed>
-            <Grid.Column verticalAlign='middle' mobile={16} tablet={11} computer={8}>
+            <StyledCardWrapper verticalAlign='middle' mobile={16} tablet={11} computer={8}>
               <StyledCard>
                 <Card.Content>
                   <StyledTitleName>{strings.work.shoppers.position}</StyledTitleName>
@@ -172,7 +168,7 @@ class Work extends Component {
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
-            </Grid.Column>
+            </StyledCardWrapper>
           </Grid>
           <Responsive {...Responsive.onlyComputer}>
             <Divider vertical><StyledCircleIcon name='dot circle'/></Divider>

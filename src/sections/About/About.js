@@ -1,40 +1,51 @@
 import React, {Component} from 'react';
-import {StyledAboutContainer, StyledEmailWrapper, StyledIcon, StyledIntro, StyledLocationWrapper} from "./styles";
+import {
+  StyledAboutContainer, StyledEducationWrapper,
+  StyledIcon,
+  StyledInfoGridWrapper,
+  StyledIntro,
+  StyledLocationWrapper,
+  StyledNameHeader,
+  StyledSubHeaderRole
+} from "./styles";
 import strings from "../../res/strings";
-import {GridColumn, Responsive} from "semantic-ui-react";
-import InfoCard from "../../components/InfoCard/InfoCard";
-import {StyledGlobalGridContainer, StyledHeader, StyledHeaderWrapper} from "../../res/styles";
+import {GridColumn, Image} from "semantic-ui-react";
+import {StyledGlobalGridContainer} from "../../res/styles";
+import profile from '../../res/images/profile1.jpg';
 
 class About extends Component {
 
   renderDescription() {
     return (
       <StyledAboutContainer id="about" name="about">
-        <StyledHeaderWrapper>
-          <StyledHeader>
-            Get To Know Me
-          </StyledHeader>
-        </StyledHeaderWrapper>
         <StyledGlobalGridContainer columns={2} relaxed='very'>
-          <GridColumn mobile={16} tablet={8} computer={8}>
+          <GridColumn mobile={16} tablet={10} computer={10}>
+            <StyledNameHeader>
+              {strings.intro.name}
+            </StyledNameHeader>
+            <StyledSubHeaderRole>
+              {strings.intro.title}
+            </StyledSubHeaderRole>
             <StyledIntro>
-              {strings.description.name}<br/><br/>
-              {strings.description.story}<br/><br/>
-              {strings.description.work}<br/><br/>
+              {strings.description.intro}<br/><br/>
               {strings.description.hobby}
             </StyledIntro>
-            <Responsive maxWidth={1183}>
-              <StyledEmailWrapper>
-                <StyledIcon name='mail'/><a href='mailto:xiaoling.yang@uwaterloo.ca'>{strings.email}</a>
-              </StyledEmailWrapper>
-              <StyledLocationWrapper>
-                <StyledIcon name='map marker alternate'/>{strings.location}
-              </StyledLocationWrapper>
-            </Responsive>
+            <StyledLocationWrapper>
+              <StyledIcon size='large' name='map marker alternate'/>
+              {strings.location}
+            </StyledLocationWrapper>
+            <StyledEducationWrapper>
+              <StyledIcon size='large' name='graduation'/>
+              {strings.education.school}
+              {strings.dot}
+              {strings.education.degree}
+              {strings.divider}
+              {strings.education.date}
+            </StyledEducationWrapper>
           </GridColumn>
-          <GridColumn mobile={16} tablet={8} computer={8}>
-            <InfoCard></InfoCard>
-          </GridColumn>
+          <StyledInfoGridWrapper mobile={16} tablet={6} computer={6}>
+            <Image src={profile} size='medium'/>
+          </StyledInfoGridWrapper>
         </StyledGlobalGridContainer>
       </StyledAboutContainer>
     )

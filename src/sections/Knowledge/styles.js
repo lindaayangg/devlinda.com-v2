@@ -4,5 +4,6 @@ import {Grid} from "semantic-ui-react";
 export const StyledWrapper = styled(Grid)`
   &&& {
     margin-top: 30px;
+    padding: 0px 10px;
   }
 `;

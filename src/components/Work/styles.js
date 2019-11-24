@@ -4,7 +4,7 @@ import {Card, GridColumn, Icon, Image, LabelGroup, Segment} from "semantic-ui-re
 export const StyledWorkExperienceWrapper = styled.div`
   &&& {
     margin-top: 30px;
-    width: 100%;
+    width: 96%;
   }
 `;
 
@@ -16,7 +16,7 @@ export const StyledSegment = styled(Segment)`
 
 export const StyledCircleIcon = styled(Icon)`
   &&& {
-    color: #DB1793;
+    color: #54B689;
   }
 `;
 
@@ -48,6 +48,14 @@ export const StyledLeftColumnReversed = styled(GridColumn)`
   }
 `;
 
+export const StyledCardWrapper = styled(GridColumn)`
+  &&& {
+    @media (max-width: 450px) {
+      padding: 20px !important;
+    }
+  }
+`;
+
 export const StyledCard = styled(Card)`
   &&& {
     width: 100% !important;
@@ -70,7 +78,7 @@ export const StyledCompanyWrapperLeft = styled(GridColumn)`
   &&& {
     text-align: end;
     border-right-style: solid;
-    border-right-color: #DB1793;
+    border-right-color: #54B689;
     padding-right: 8px;
     margin-top: 15px;
     @media (max-width: 767px) {
@@ -86,12 +94,12 @@ export const StyledCompanyWrapperLeft = styled(GridColumn)`
 export const StyledCompanyWrapperRight = styled(GridColumn)`
   &&& {
     border-left-style: solid;
-    border-left-color: #DB1793;
+    border-left-color: #54B689;
     padding-left: 8px;
     margin-top: 15px;
     @media (max-width: 991px) {
       border-right-style: solid;
-      border-right-color: #DB1793;
+      border-right-color: #54B689;
       padding-right: 8px;
       border-left-style: none;
       border-left-color: transparent;
@@ -110,13 +118,13 @@ export const StyledCompanyWrapperRight = styled(GridColumn)`
 export const StyledCompanyName = styled.div`
   &&& {
     font-weight: 900;
-    color: #DB1793;
+    color: #54B689;
     font-size: 18px !important;
   }
 `;
 
 export const StyledTitleName = styled(Card.Header)`
   &&& {
-    color: #DB1793 !important;
+    color: #54B689 !important;
   }
 `;
