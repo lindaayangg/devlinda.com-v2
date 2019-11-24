@@ -1,5 +1,3 @@
-import React from "react";
-
 const strings = {
   sidebar: {
     name: 'LINDA YANG',
