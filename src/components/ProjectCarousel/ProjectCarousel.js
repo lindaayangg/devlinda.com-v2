@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import {Card, Image, Label, LabelGroup} from "semantic-ui-react";
-import {StyledArrows, StyledCardWrapper, StyledProjectName} from "../../sections/Projects/styles";
+import {StyledArrows, StyledCardWrapper, StyledProjectName} from "./styles";
 import budgetbuddy from '../../res/images/budgetbuddy.png';
 import wave from '../../res/images/wave.png';
 import groshare from '../../res/images/groshare.png';
@@ -36,8 +36,8 @@ class ProjectCarousel extends Component {
 
   render() {
     const {width} = this.state;
-    const carouselSettings = (width < 1300) ?
-      (width < 767) ? {
+    const carouselSettings = (width < 1335) ?
+      (width < 768) ? {
         infinite: true,
         animationSpeed: 1000,
         slidesPerPage: 1,
@@ -103,7 +103,6 @@ class ProjectCarousel extends Component {
               <LabelGroup>
                 <Label>Flutter</Label>
                 <Label>Chirp API</Label>
-                <Label>Android Studio</Label>
                 <Label>Ruby</Label>
                 <Label>Ruby On Rails</Label>
                 <Label>MySQL</Label>

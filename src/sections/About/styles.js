@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {GridColumn, Header, HeaderSubheader, Icon} from "semantic-ui-react";
+import {GridColumn, Header, HeaderSubheader, Icon, Image} from "semantic-ui-react";
 
 export const StyledAboutContainer = styled.div`
   &&& {
@@ -65,6 +65,14 @@ export const StyledSubHeaderRole = styled(HeaderSubheader)`
     color: #4f4f4f;
     font-size: 20px;
     font-weight: 100;
+  }
+`;
+
+export const StyledImage = styled(Image)`
+  &&& {
+    @media (max-width: 450px) {
+      width: 100% !important;
+    }
   }
 `;
 

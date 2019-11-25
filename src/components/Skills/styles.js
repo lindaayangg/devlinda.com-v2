@@ -4,19 +4,9 @@ import {Grid, Icon} from "semantic-ui-react";
 export const StyledSkillsWrapperContainer = styled.div`
   &&& {
     width: 95%;
-  }
-`;
-
-export const StyledGridContainer = styled(Grid)`
-  &&& {
-    margin-top: 20px !important;
-    @media (max-width: 859px) {
-      margin-top: 0px !important;
-      margin-left: 0px !important;
-      padding: 0px !important
-    }
-    @media (max-width: 450px) {
-      width: 98% !important; 
+    margin-top: 40px;
+    @media (max-width: 1060px) {
+      width: 100%;
     }
   }
 `;

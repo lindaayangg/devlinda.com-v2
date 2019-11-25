@@ -5,6 +5,9 @@ export const StyledWorkExperienceWrapper = styled.div`
   &&& {
     margin-top: 30px;
     width: 96%;
+    @media (max-width: 1060px) {
+      width: 100%;
+    }
   }
 `;
 

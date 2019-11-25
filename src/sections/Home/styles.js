@@ -9,7 +9,7 @@ export const StyledArticle = styled.div`
       margin-left: 0px;
     }
     @media (max-width: 450px) {
-      padding: 20px 5px;
+      padding: 20px 30px 0 30px;
     }
   }
 `;

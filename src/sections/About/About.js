@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {
-  StyledAboutContainer, StyledEducationWrapper,
+  StyledAboutContainer,
+  StyledEducationWrapper,
   StyledIcon,
+  StyledImage,
   StyledInfoGridWrapper,
   StyledIntro,
   StyledLocationWrapper,
@@ -9,7 +11,7 @@ import {
   StyledSubHeaderRole
 } from "./styles";
 import strings from "../../res/strings";
-import {GridColumn, Image} from "semantic-ui-react";
+import {GridColumn} from "semantic-ui-react";
 import {StyledGlobalGridContainer} from "../../res/styles";
 import profile from '../../res/images/profile1.jpg';
 
@@ -44,7 +46,7 @@ class About extends Component {
             </StyledEducationWrapper>
           </GridColumn>
           <StyledInfoGridWrapper mobile={16} tablet={6} computer={6}>
-            <Image src={profile} size='medium'/>
+            <StyledImage src={profile} size='medium'/>
           </StyledInfoGridWrapper>
         </StyledGlobalGridContainer>
       </StyledAboutContainer>

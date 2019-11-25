@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import {GridColumn, List, Segment} from "semantic-ui-react";
+import {GridColumn, List, Segment, Grid} from "semantic-ui-react";
 import {
   StyledCheckIcon,
-  StyledGridContainer,
   StyledSkillsIcon,
   StyledSkillsTitleWrapper,
   StyledSkillsWrapper,
@@ -12,33 +11,12 @@ import {
 import strings from "../../res/strings";
 
 class Skills extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      width: 0,
-      height: 0
-    };
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-  }
-
-  componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
-  }
-
-  updateWindowDimensions() {
-    this.setState({width: window.innerWidth, height: window.innerHeight});
-  }
 
   render() {
     return (
       <StyledSkillsWrapperContainer>
-        <StyledGridContainer columns={2}>
-          <GridColumn computer={8}>
+        <Grid columns={2}>
+          <GridColumn computer={8} tablet={8} mobile={16}>
             <Segment raised>
               <StyledSkillsTitleWrapper>
                 <StyledSkillsIcon name="code"/>
@@ -85,8 +63,7 @@ class Skills extends Component {
             </Segment>
           </GridColumn>
 
-
-          <GridColumn computer={8}>
+          <GridColumn computer={8} tablet={8} mobile={16}>
             <Segment raised>
               <StyledSkillsTitleWrapper>
                 <StyledSkillsIcon name="database"/>
@@ -132,7 +109,7 @@ class Skills extends Component {
               </StyledSkillsWrapper>
             </Segment>
           </GridColumn>
-        </StyledGridContainer>
+        </Grid>
       </StyledSkillsWrapperContainer>
     )
   }

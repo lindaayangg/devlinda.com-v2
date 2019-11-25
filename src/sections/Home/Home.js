@@ -153,10 +153,10 @@ class Home extends Component {
               <Knowledge/>
               <Experience/>
               <Projects/>
-              <Responsive maxWidth={1183}>
-                <CopyRight/>
-              </Responsive>
             </StyledArticle>
+            <Responsive maxWidth={1183}>
+              <CopyRight/>
+            </Responsive>
           </div>
           : this.renderLanding()
         }
