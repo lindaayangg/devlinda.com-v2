@@ -141,7 +141,7 @@ class Home extends Component {
     return (
       <div>
         {enter ?
-          <div>
+          <div id="home" name="home">
             <Responsive maxWidth={1183}>
               <Navbar/>
             </Responsive>

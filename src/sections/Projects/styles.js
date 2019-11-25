@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {CardHeader, Icon} from "semantic-ui-react";
 
 export const StyledProjectContainer = styled.div`
   &&& {
