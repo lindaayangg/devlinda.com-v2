@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {StyledContainer, StyledHeader, StyledHeaderWrapper} from "../../res/styles";
 import Skills from "../../components/Skills/Skills";
+import strings from "../../res/strings";
 
 class Knowledge extends Component {
   render() {
@@ -8,7 +9,7 @@ class Knowledge extends Component {
       <StyledContainer id='knowledge' name='knowledge'>
         <StyledHeaderWrapper>
           <StyledHeader>
-            What I know
+            {strings.sections.knowledge}
           </StyledHeader>
         </StyledHeaderWrapper>
         <Skills/>

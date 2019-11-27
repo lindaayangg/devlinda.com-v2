@@ -19,6 +19,7 @@ import {
   StyledImage,
   StyledLandingWrapper
 } from "./styles";
+import Fun from "../Fun/Fun";
 
 class Home extends Component {
   state = {
@@ -153,6 +154,7 @@ class Home extends Component {
               <Knowledge/>
               <Experience/>
               <Projects/>
+              <Fun/>
             </StyledArticle>
             <Responsive maxWidth={1183}>
               <CopyRight/>

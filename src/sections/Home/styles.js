@@ -4,7 +4,7 @@ import {Button, Header, Image} from "semantic-ui-react";
 export const StyledArticle = styled.div`
   &&& {
     margin-left: 280px;
-    padding: 30px 60px 0 60px;
+    padding: 30px 60px 60px 60px;
     @media (max-width: 1183px) {
       margin-left: 0px;
     }
@@ -61,5 +61,9 @@ export const StyledEnterButton = styled(Button)`
     color: #fff;
     width: 100px;
     margin-top: 10px;
+    &:hover {
+      color: rgba(0,0,0,0.5);
+      background-color: #54B689 !important;
+    }
   }
 `;

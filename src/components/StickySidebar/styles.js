@@ -40,10 +40,10 @@ export const StyledSocialMediaButtons = styled(Button)`
     background-color: #fff !important;
     color: #54B689;
     margin: 0px 5px;
-    &:hover {
-      color: #40976f;
-      background-color: rgba(255,255,255,0.8);
-    }
+    // &:hover {
+    //   color: #40976f;
+    //   background-color: rgba(255,255,255,0.8);
+    // }
   }
 `;
 

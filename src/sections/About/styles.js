@@ -4,7 +4,6 @@ import {GridColumn, Header, HeaderSubheader, Icon, Image} from "semantic-ui-reac
 export const StyledAboutContainer = styled.div`
   &&& {
     margin-top: 30px;
-    margin-bottom: 30px;
     @media (max-width: 1183px) {
       margin-top: 65px;
     }

@@ -1,21 +1,22 @@
 import React, {Component} from 'react';
-import {StyledHeader, StyledHeaderWrapper} from "../../res/styles";
-import {StyledCarouselWrapper, StyledProjectContainer} from "./styles";
+import {StyledContainer, StyledHeader, StyledHeaderWrapper} from "../../res/styles";
+import {StyledCarouselWrapper} from "./styles";
 import ProjectCarousel from "../../components/ProjectCarousel/ProjectCarousel";
+import strings from "../../res/strings";
 
 class Projects extends Component {
   render() {
     return (
-      <StyledProjectContainer id="projects" name="projects">
+      <StyledContainer id="projects" name="projects">
         <StyledHeaderWrapper>
           <StyledHeader>
-            What I have done
+            {strings.sections.projects}
           </StyledHeader>
         </StyledHeaderWrapper>
         <StyledCarouselWrapper>
           <ProjectCarousel/>
         </StyledCarouselWrapper>
-      </StyledProjectContainer>
+      </StyledContainer>
     )
   }
 }

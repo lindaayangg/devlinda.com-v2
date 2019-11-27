@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
-import {StyledHeader, StyledHeaderWrapper} from "../../res/styles";
-import {StyledExperienceContainer} from "./styles";
+import {StyledContainer, StyledHeader, StyledHeaderWrapper} from "../../res/styles";
 import Work from "../../components/Work/Work";
+import strings from "../../res/strings";
 
 class Experience extends Component {
   render() {
     return (
-      <StyledExperienceContainer id="experience" name="experience">
+      <StyledContainer id="experience" name="experience">
         <StyledHeaderWrapper>
           <StyledHeader>
-            Where I have been
+            {strings.sections.experience}
           </StyledHeader>
         </StyledHeaderWrapper>
         <Work/>
-      </StyledExperienceContainer>
+      </StyledContainer>
     )
   }
 }

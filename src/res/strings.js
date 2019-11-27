@@ -1,4 +1,10 @@
 const strings = {
+  sections: {
+    knowledge: 'What I Know',
+    experience: 'Where I Have Been',
+    projects: 'What I Have Done',
+    fun: 'A Few Fun Facts'
+  },
   dot: ' • ',
   divider: ' || ',
   sidebar: {
