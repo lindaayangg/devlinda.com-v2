@@ -21,7 +21,10 @@ export const StyledCardWrapper = styled.div`
   &&& {
     padding: 10px 0;
     height: 550px;
-    @media (max-width: 400px) {
+    @media (max-width: 350px) {
+      width: 190px;
+    }
+    @media (min-width: 351px) and (max-width: 400px) {
       width: 230px;
     }
     @media (min-width: 401px) and (max-width: 450px) {
