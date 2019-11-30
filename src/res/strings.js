@@ -119,6 +119,12 @@ const strings = {
     hackathon: 'hackathon enthusiast',
     pharmacy: 'pharmacy technician',
   },
+  fun: {
+    instrument: 'I can play 4 instruments: piano, cello, flute, and saxophone - I\'ve been playing the piano for 15 years.',
+    doctor: 'I entered university as a life science student wanting to become a medical doctor.',
+    computer: 'If you asked me what I want to do in the future two years ago, I would\'ve said "anything, but computers".',
+    hackathon: 'I went to a hackathon by accident. I was fascinated by a button which directed me to somewhere that my friend created in simple HTML/CSS.',
+  },
 };
 
 export default strings;
