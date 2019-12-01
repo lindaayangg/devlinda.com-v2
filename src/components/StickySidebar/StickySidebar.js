@@ -104,16 +104,6 @@ class StickySidebar extends Component {
               </StyledHeaderLabel>
             </StyledHeaderContainer>
             <StyledHeaderContainer as='h5'>
-              <StyledLabelIcon name='file text'/>
-              <StyledHeaderLabel
-                darkMode={this.state.darkMode}
-                href="https://devlinda.com/assets/Resume_Linda_Yang.pdf"
-                target='_blank'
-              >
-                {strings.sidebar.resume}
-              </StyledHeaderLabel>
-            </StyledHeaderContainer>
-            <StyledHeaderContainer as='h5'>
               <StyledLabelIcon name='thumbs up'/>
               <StyledHeaderLabel
                 darkMode={this.state.darkMode}
@@ -123,6 +113,16 @@ class StickySidebar extends Component {
                 smooth={true}
                 duration={500}>
                 {strings.sidebar.fun}
+              </StyledHeaderLabel>
+            </StyledHeaderContainer>
+            <StyledHeaderContainer as='h5'>
+              <StyledLabelIcon name='file text'/>
+              <StyledHeaderLabel
+                darkMode={this.state.darkMode}
+                href="https://devlinda.com/assets/Resume_Linda_Yang.pdf"
+                target='_blank'
+              >
+                {strings.sidebar.resume}
               </StyledHeaderLabel>
             </StyledHeaderContainer>
           </div>

@@ -14,7 +14,7 @@ const strings = {
     experience: 'Experience',
     projects: 'Projects',
     resume: 'Resume',
-    fun: 'Fun Facts & Stuff',
+    fun: 'Fun Facts',
     darkMode: 'Dark Mode',
   },
   intro: {
