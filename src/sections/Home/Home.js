@@ -20,6 +20,7 @@ import {
   StyledLandingWrapper
 } from "./styles";
 import Fun from "../Fun/Fun";
+import {Sugar} from 'react-preloaders';
 
 class Home extends Component {
   state = {
@@ -140,7 +141,7 @@ class Home extends Component {
   render() {
     const {enter} = this.state;
     return (
-      <div>
+      <React.Fragment>
         {enter ?
           <div id="home" name="home">
             <Responsive maxWidth={1183}>
@@ -162,7 +163,11 @@ class Home extends Component {
           </div>
           : this.renderLanding()
         }
-      </div>
+        <Sugar
+          background="#000"
+          color='#fff'
+        />
+      </React.Fragment>
     )
   }
 }
