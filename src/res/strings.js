@@ -85,7 +85,7 @@ const strings = {
       location: 'Winnipeg, Manitoba',
       position: 'Junior Software Developer | Internship',
       date: 'Sep. 2019 - Present',
-      tasks: 'Placeholder for task',
+      tasks: 'Customer Order Conversion Team - Involved in developing the back-end and front-end for new features on the customer order creation platform.',
     },
     formlabs: {
       company: 'Formlabs',
