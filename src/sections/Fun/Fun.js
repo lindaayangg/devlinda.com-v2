@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import {StyledContainer, StyledHeader, StyledHeaderWrapper} from "../../res/styles";
+import {StyledHeader, StyledHeaderWrapper} from "../../res/styles";
 import strings from "../../res/strings";
-import {StyledBodyContainer, StyledFact, StyledFactWrapper, StyledIcon} from "./styles";
+import {StyledBodyContainer, StyledFact, StyledFactWrapper, StyledFunContainer, StyledIcon} from "./styles";
 
 class Fun extends Component {
   render() {
     return (
-      <StyledContainer id="fun" name="fun">
+      <StyledFunContainer id="fun" name="fun">
         <StyledHeaderWrapper>
           <StyledHeader>
             {strings.sections.fun}
@@ -30,7 +30,7 @@ class Fun extends Component {
             <StyledFact>{strings.fun.hackathon}</StyledFact>
           </StyledFactWrapper>
         </StyledBodyContainer>
-      </StyledContainer>
+      </StyledFunContainer>
     )
   }
 }

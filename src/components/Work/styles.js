@@ -120,7 +120,7 @@ export const StyledCompanyWrapperRight = styled(GridColumn)`
 
 export const StyledCompanyName = styled.div`
   &&& {
-    font-weight: 900;
+    font-weight: 600;
     color: #54B689;
     font-size: 18px !important;
   }
