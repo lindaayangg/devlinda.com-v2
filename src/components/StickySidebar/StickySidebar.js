@@ -19,6 +19,7 @@ import {
 import {Link} from "react-scroll";
 import strings from "../../res/strings";
 import sidebarprofile from '../../res/images/sidebarprofile.png';
+import resume from '../../res/Resume_Linda_Yang.pdf';
 
 class StickySidebar extends Component {
   state = {
@@ -119,7 +120,7 @@ class StickySidebar extends Component {
               <StyledLabelIcon name='file text'/>
               <StyledHeaderLabel
                 darkMode={this.state.darkMode}
-                href="https://devlinda.com/assets/Resume_Linda_Yang.pdf"
+                href={resume}
                 target='_blank'
               >
                 {strings.sidebar.resume}

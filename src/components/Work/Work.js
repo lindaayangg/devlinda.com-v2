@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {Card, Divider, Grid, Label, Responsive, Segment} from "semantic-ui-react";
+import {Card, Divider, Grid, Responsive, Segment} from "semantic-ui-react";
 import {
-  StyledCard, StyledCardWrapper,
+  StyledCard,
+  StyledCardWrapper,
   StyledCircleIcon,
   StyledCompanyName,
   StyledCompanyWrapperLeft,
@@ -11,6 +12,7 @@ import {
   StyledLeftColumnReversed,
   StyledSegment,
   StyledTitleName,
+  StyledTools,
   StyledToolsLabelGroup,
   StyledWorkExperienceWrapper
 } from "./styles";
@@ -41,23 +43,23 @@ class Work extends Component {
                   <Card.Meta>{strings.work.skip.date}</Card.Meta>
                   <Card.Description>{strings.work.skip.tasks}</Card.Description>
                   <StyledToolsLabelGroup>
-                    <Label>Java 8</Label>
-                    <Label>ReactJS</Label>
-                    <Label>Redux</Label>
-                    <Label>JavaScript</Label>
-                    <Label>TypeScript</Label>
-                    <Label>Spark Framework</Label>
-                    <Label>MySQL</Label>
-                    <Label>SQL</Label>
-                    <Label>REST API</Label>
-                    <Label>Jooq</Label>
-                    <Label>Memcached</Label>
-                    <Label>ElasticSearch</Label>
-                    <Label>Graphite</Label>
-                    <Label>Quartz</Label>
-                    <Label>HTML | CSS</Label>
-                    <Label>Git</Label>
-                    <Label>Jenkins</Label>
+                    <StyledTools>Java 8</StyledTools>
+                    <StyledTools>ReactJS</StyledTools>
+                    <StyledTools>Redux</StyledTools>
+                    <StyledTools>JavaScript</StyledTools>
+                    <StyledTools>TypeScript</StyledTools>
+                    <StyledTools>Spark Framework</StyledTools>
+                    <StyledTools>MySQL</StyledTools>
+                    <StyledTools>SQL</StyledTools>
+                    <StyledTools>REST API</StyledTools>
+                    <StyledTools>Jooq</StyledTools>
+                    <StyledTools>Memcached</StyledTools>
+                    <StyledTools>ElasticSearch</StyledTools>
+                    <StyledTools>Graphite</StyledTools>
+                    <StyledTools>Quartz</StyledTools>
+                    <StyledTools>HTML | CSS</StyledTools>
+                    <StyledTools>Git</StyledTools>
+                    <StyledTools>Jenkins</StyledTools>
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
@@ -88,18 +90,18 @@ class Work extends Component {
                     {strings.work.formlabs.tasks}
                   </Card.Description>
                   <StyledToolsLabelGroup>
-                    <Label>ReactJS</Label>
-                    <Label>D3.js</Label>
-                    <Label>Python</Label>
-                    <Label>Django</Label>
-                    <Label>DjangoCMS</Label>
-                    <Label>PostgreSQL</Label>
-                    <Label>REST API</Label>
-                    <Label>JavaScript</Label>
-                    <Label>JQuery</Label>
-                    <Label>GraphQL</Label>
-                    <Label>HTML | CSS | SCSS</Label>
-                    <Label>Git</Label>
+                    <StyledTools>ReactJS</StyledTools>
+                    <StyledTools>D3.js</StyledTools>
+                    <StyledTools>Python</StyledTools>
+                    <StyledTools>Django</StyledTools>
+                    <StyledTools>DjangoCMS</StyledTools>
+                    <StyledTools>PostgreSQL</StyledTools>
+                    <StyledTools>REST API</StyledTools>
+                    <StyledTools>JavaScript</StyledTools>
+                    <StyledTools>JQuery</StyledTools>
+                    <StyledTools>GraphQL</StyledTools>
+                    <StyledTools>HTML | CSS | SCSS</StyledTools>
+                    <StyledTools>Git</StyledTools>
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
@@ -129,12 +131,12 @@ class Work extends Component {
                     {strings.work.sydneystone.tasks}
                   </Card.Description>
                   <StyledToolsLabelGroup>
-                    <Label>HTML | CSS</Label>
-                    <Label>JavaScript</Label>
-                    <Label>JQuery</Label>
-                    <Label>Magento</Label>
-                    <Label>PHP</Label>
-                    <Label>Photoshop</Label>
+                    <StyledTools>HTML | CSS</StyledTools>
+                    <StyledTools>JavaScript</StyledTools>
+                    <StyledTools>JQuery</StyledTools>
+                    <StyledTools>Magento</StyledTools>
+                    <StyledTools>PHP</StyledTools>
+                    <StyledTools>Photoshop</StyledTools>
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>
@@ -163,8 +165,8 @@ class Work extends Component {
                     {strings.work.shoppers.tasks}
                   </Card.Description>
                   <StyledToolsLabelGroup>
-                    <Label>HealthWatch</Label>
-                    <Label>MMS Software System</Label>
+                    <StyledTools>HealthWatch</StyledTools>
+                    <StyledTools>MMS Software System</StyledTools>
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>

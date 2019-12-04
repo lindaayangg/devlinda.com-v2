@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button, CardHeader, Icon} from "semantic-ui-react";
+import {Button, CardHeader, Icon, Label} from "semantic-ui-react";
 
 export const StyledLinkButton = styled(Button)`
   &&& {
@@ -36,5 +36,11 @@ export const StyledCardWrapper = styled.div`
 export const StyledProjectName = styled(CardHeader)`
   &&& {
     color: #54B689 !important;
+  }
+`;
+
+export const StyledTools = styled(Label)`
+  &&& {
+    font-weight: 600 !important;
   }
 `;

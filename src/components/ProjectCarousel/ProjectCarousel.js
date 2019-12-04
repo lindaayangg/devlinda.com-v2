@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import {Card, Image, Label, LabelGroup} from "semantic-ui-react";
-import {StyledArrows, StyledCardWrapper, StyledProjectName} from "./styles";
+import {Card, Image, LabelGroup} from "semantic-ui-react";
+import {StyledArrows, StyledCardWrapper, StyledLinkButton, StyledProjectName, StyledTools} from "./styles";
 import budgetbuddy from '../../res/images/budgetbuddy.png';
 import wave from '../../res/images/wave.png';
 import groshare from '../../res/images/groshare.png';
 import safeme from '../../res/images/safeme.png';
 import distractic from '../../res/images/distractic.png'
-import {StyledLinkButton} from "./styles";
 import strings from "../../res/strings";
 
 class ProjectCarousel extends Component {
@@ -101,14 +100,14 @@ class ProjectCarousel extends Component {
             </Card.Content>
             <Card.Content extra>
               <LabelGroup>
-                <Label>Flutter</Label>
-                <Label>Chirp API</Label>
-                <Label>Ruby</Label>
-                <Label>Ruby On Rails</Label>
-                <Label>MySQL</Label>
-                <Label>ReactJS</Label>
-                <Label>JavaScript</Label>
-                <Label>HTML | CSS</Label>
+                <StyledTools>Flutter</StyledTools>
+                <StyledTools>Chirp API</StyledTools>
+                <StyledTools>Ruby</StyledTools>
+                <StyledTools>Ruby On Rails</StyledTools>
+                <StyledTools>MySQL</StyledTools>
+                <StyledTools>ReactJS</StyledTools>
+                <StyledTools>JavaScript</StyledTools>
+                <StyledTools>HTML | CSS</StyledTools>
               </LabelGroup>
             </Card.Content>
           </Card>
@@ -139,10 +138,10 @@ class ProjectCarousel extends Component {
             </Card.Content>
             <Card.Content extra>
               <LabelGroup>
-                <Label>Java</Label>
-                <Label>TD Da Vinci API</Label>
-                <Label>Yelp Fusion API</Label>
-                <Label>Android Studio</Label>
+                <StyledTools>Java</StyledTools>
+                <StyledTools>TD Da Vinci API</StyledTools>
+                <StyledTools>Yelp Fusion API</StyledTools>
+                <StyledTools>Android Studio</StyledTools>
               </LabelGroup>
             </Card.Content>
           </Card>
@@ -173,10 +172,10 @@ class ProjectCarousel extends Component {
             </Card.Content>
             <Card.Content extra>
               <LabelGroup>
-                <Label>Java</Label>
-                <Label>Google ML Kit API</Label>
-                <Label>AI</Label>
-                <Label>Android Studio</Label>
+                <StyledTools>Java</StyledTools>
+                <StyledTools>Google ML Kit API</StyledTools>
+                <StyledTools>AI</StyledTools>
+                <StyledTools>Android Studio</StyledTools>
               </LabelGroup>
             </Card.Content>
           </Card>
@@ -207,11 +206,11 @@ class ProjectCarousel extends Component {
             </Card.Content>
             <Card.Content extra>
               <LabelGroup>
-                <Label>MongoDB</Label>
-                <Label>NodeJS</Label>
-                <Label>HTML | CSS (Bootstrap)</Label>
-                <Label>HERE Maps API</Label>
-                <Label>Google Places</Label>
+                <StyledTools>MongoDB</StyledTools>
+                <StyledTools>NodeJS</StyledTools>
+                <StyledTools>HTML | CSS (Bootstrap)</StyledTools>
+                <StyledTools>HERE Maps API</StyledTools>
+                <StyledTools>Google Places</StyledTools>
               </LabelGroup>
             </Card.Content>
           </Card>
@@ -242,10 +241,10 @@ class ProjectCarousel extends Component {
             </Card.Content>
             <Card.Content extra>
               <LabelGroup>
-                <Label>HTML | CSS (Bootstrap)</Label>
-                <Label>JavaScript</Label>
-                <Label>JQuery</Label>
-                <Label>LAMP</Label>
+                <StyledTools>HTML | CSS (Bootstrap)</StyledTools>
+                <StyledTools>JavaScript</StyledTools>
+                <StyledTools>JQuery</StyledTools>
+                <StyledTools>LAMP</StyledTools>
               </LabelGroup>
             </Card.Content>
           </Card>

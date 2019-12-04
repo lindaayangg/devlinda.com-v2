@@ -11,6 +11,7 @@ import {
 import {StyledHeaderContainer, StyledHeaderLabel, StyledLabelIcon} from "../StickySidebar/styles";
 import {Link} from "react-scroll";
 import strings from "../../res/strings";
+import resume from '../../res/Resume_Linda_Yang.pdf';
 
 class Navbar extends Component {
   state = {
@@ -105,7 +106,7 @@ class Navbar extends Component {
             <StyledHeaderLabel
               darkMode={this.state.darkMode}
               onClick={this.handleCloseNav}
-              href="https://devlinda.com/assets/Resume_Linda_Yang.pdf"
+              href={resume}
               target='_blank'
             >
               {strings.sidebar.resume}

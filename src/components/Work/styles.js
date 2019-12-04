@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Card, GridColumn, Icon, Image, LabelGroup, Segment} from "semantic-ui-react";
+import {Card, GridColumn, Icon, Image, Label, LabelGroup, Segment} from "semantic-ui-react";
 
 export const StyledWorkExperienceWrapper = styled.div`
   &&& {
@@ -129,5 +129,11 @@ export const StyledCompanyName = styled.div`
 export const StyledTitleName = styled(Card.Header)`
   &&& {
     color: #54B689 !important;
+  }
+`;
+
+export const StyledTools = styled(Label)`
+  &&& {
+    font-weight: 600 !important;
   }
 `;

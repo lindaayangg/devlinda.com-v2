@@ -63,7 +63,7 @@ export const StyledSubHeaderRole = styled(HeaderSubheader)`
   &&& {
     color: #4f4f4f;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 400;
   }
 `;
 
