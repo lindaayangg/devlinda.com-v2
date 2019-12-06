@@ -7,6 +7,7 @@ export const StyledLinkButton = styled(Button)`
     color: #fff;
     &:hover {
       background-color: #54B689;
+      color: rgba(0,0,0,.8);
     }
   }
 `;

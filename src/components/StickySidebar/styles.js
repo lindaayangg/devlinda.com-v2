@@ -40,10 +40,9 @@ export const StyledSocialMediaButtons = styled(Button)`
     background-color: #fff !important;
     color: #54B689;
     margin: 0px 5px;
-    // &:hover {
-    //   color: #40976f;
-    //   background-color: rgba(255,255,255,0.8);
-    // }
+    &:hover {
+      color: rgba(0,0,0,.8);
+    }
   }
 `;
 
@@ -87,14 +86,6 @@ export const StyledHeaderLabel = styled(HeaderContent)`
 export const StyledLabelIcon = styled(Icon)`
   &&& {
     cursor: pointer;
-  }
-`;
-
-export const StyledHireMeButton = styled(Button)`
-  &&& {
-    margin-top: 30px;
-    color: #fff;
-    background-color: #C71F7E;
   }
 `;
 
