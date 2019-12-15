@@ -20,7 +20,7 @@ export const StyledSkillsTitleWrapper = styled.div`
 export const StyledSpan = styled.span`
   &&& {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     color: #54B689;
     margin-left: 5px;
   }
