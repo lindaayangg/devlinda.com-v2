@@ -50,16 +50,16 @@ class Work extends Component {
                     <StyledTools>TypeScript</StyledTools>
                     <StyledTools>Spark Framework</StyledTools>
                     <StyledTools>MySQL</StyledTools>
-                    <StyledTools>SQL</StyledTools>
+                    <StyledTools>PostgreSQL</StyledTools>
                     <StyledTools>REST API</StyledTools>
                     <StyledTools>Jooq</StyledTools>
                     <StyledTools>Memcached</StyledTools>
+                    <StyledTools>Redis</StyledTools>
                     <StyledTools>ElasticSearch</StyledTools>
                     <StyledTools>Graphite</StyledTools>
-                    <StyledTools>Quartz</StyledTools>
+                    <StyledTools>Amazon SQS</StyledTools>
                     <StyledTools>HTML | CSS</StyledTools>
                     <StyledTools>Git</StyledTools>
-                    <StyledTools>Jenkins</StyledTools>
                   </StyledToolsLabelGroup>
                 </Card.Content>
               </StyledCard>

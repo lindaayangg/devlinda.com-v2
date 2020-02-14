@@ -85,7 +85,7 @@ const strings = {
       location: 'Winnipeg, Manitoba',
       position: 'Junior Software Developer | Internship',
       date: 'Sep. 2019 - Present',
-      tasks: 'Customer Order Conversion Team - Involved in developing the back-end and front-end for new features on the customer order creation platform.',
+      tasks: 'Customer Order Conversion Team - Involved in developing and improving back-end microservices and developing front-end new features on the web application www.skipthedishes.com.',
     },
     formlabs: {
       company: 'Formlabs',
