@@ -57,6 +57,7 @@ class Work extends Component {
                     <StyledTools>Redis</StyledTools>
                     <StyledTools>ElasticSearch</StyledTools>
                     <StyledTools>Graphite</StyledTools>
+                    <StyledTools>Quartz</StyledTools>
                     <StyledTools>Amazon SQS</StyledTools>
                     <StyledTools>HTML | CSS</StyledTools>
                     <StyledTools>Git</StyledTools>
